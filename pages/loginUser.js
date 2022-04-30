@@ -1,16 +1,12 @@
 import Navbar from "../components/Navbar/Navbar";
-import HeaderCardEvent from "../components/HeaderCardEvent/HeaderCardEvent";
-import TitleEventD from "../components/TitleEventD/TitleEventD";
+import LoginUser from "../components/LoginUser/LoginUser";
 import Footer from "../components/Footer/Footer";
-
-
 
 export default function About() {
   return (
     <div>
       <Navbar> </Navbar>
-<HeaderCardEvent></HeaderCardEvent>
-<TitleEventD></TitleEventD>
+      <LoginUser></LoginUser>
       <Footer></Footer>
     </div>
   );
