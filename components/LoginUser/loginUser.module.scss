@@ -66,22 +66,22 @@
   font-size: 24px;
   font-weight: bold;
 }
-.contImgLoginW{
+.contImgLoginW {
   display: none;
 }
 
 @media only screen and (min-width: 820px) {
   .contentLogin {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-direction: column;
     margin-left: 40px;
   }
-  .contImgLoginW{
+  .contImgLoginW {
     display: flex;
     height: 10px;
   }
-  .imgLoginW{
+  .imgLoginW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
@@ -90,24 +90,37 @@
   .containerLogin {
     height: 80vh;
   }
-  .containerLoginAndImg{
+  .containerLoginAndImg {
     display: flex;
     justify-content: space-between;
   }
-  
 }
 
 @media only screen and (min-width: 1280px) {
-  .imgLoginW{
+  .imgLoginW {
     width: 600px;
     height: 500px;
     object-fit: cover;
   }
-  .containerLogin{
-    margin-left: 100px;
+  .containerLogin {
+    margin-left: 10px;
     width: 300px;
   }
-  .containerLoginAndImg{
-    justify-content: space-between;
+  .cardLogin {
+    width: 510px;
+    height: 300px;
+  }
+  .upInputLogin {
+    margin-top: 25px;
+  }
+  .inputLogin {
+    width: 450px;
+    height: 55px;
+  }
+  .contetaContaseña {
+    margin-left: 150px;
+  }
+  .btnL{
+    margin-left: 90px;
   }
 }

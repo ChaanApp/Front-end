@@ -147,13 +147,25 @@
        object-fit: cover;
   }
   .containerLogin {
-    margin-left: 100px;
+    margin-left: 10px;
     width: 300px;
   }
-  .containerLoginAndImg {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .cardLogin {
+    width: 510px;
+    height: 300px;
+  }
+  .upInputLogin {
+    margin-top: 25px;
+  }
+  .inputLogin {
+    width: 450px;
+    height: 55px;
+  }
+  .contetaContaseña {
+    margin-left: 150px;
+  }
+  .btnL {
+    margin-left: 90px;
   }
 }
 /*# sourceMappingURL=loginUser.module.css.map */
