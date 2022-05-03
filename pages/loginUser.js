@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar/Navbar";
+import NavbarLogin from "../components/NavbarLogin/NavbarLogin";
 import LoginUser from "../components/LoginUser/LoginUser";
 import Footer from "../components/Footer/Footer";
 
 export default function About() {
   return (
     <div>
-      <Navbar> </Navbar>
+      <NavbarLogin> </NavbarLogin>
       <LoginUser></LoginUser>
       <Footer></Footer>
     </div>

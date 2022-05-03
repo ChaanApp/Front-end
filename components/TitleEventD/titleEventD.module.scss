@@ -4,6 +4,7 @@
   text-align: left;
   margin-top: 35%;
   margin-bottom: 15%;
+  margin-left: 24px;
 }
 .textEventDH1 {
   color: #3b4559;
@@ -18,7 +19,7 @@
   margin-top: 15px;
 }
 
-@media only screen and (min-width: 728px) {
+@media only screen and (min-width: 768px) {
   .ContainerEventD {
     display: block;
     justify-content: flex-start;

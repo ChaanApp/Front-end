@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar/Navbar";
+import NavbarLogin from "../components/NavbarLOgin/NavbarLogin";
 import SectionVideo from "../components/SectionVideo/SectionVideo";
 import TitleHBnt from "../components/TitleHBnt/TitleHBnt";
 import CardAnfInv from "../components/CardAnfInv/CardAnfInv";
@@ -9,7 +9,7 @@ import Footer from "../components/Footer/Footer";
 export default function About() {
   return (
     <div>
-      <Navbar> </Navbar>
+      <NavbarLogin> </NavbarLogin>
       <SectionVideo></SectionVideo>
       <TitleHBnt></TitleHBnt>
       <CardAnfInv></CardAnfInv>
