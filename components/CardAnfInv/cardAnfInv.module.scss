@@ -3,7 +3,7 @@
   justify-content: space-around;
   text-align: center;
   margin-bottom: 5%;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .imgAnf {
   width: 156px;
@@ -40,9 +40,9 @@
   color: #3b4559;
   font-weight: bold;
 }
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 768px) {
   .ContainerCardsAnfInv {
-    margin-top: 0;
+    margin-top: 200px;
   }
   .imgAnf {
     width: 262px;
@@ -61,6 +61,12 @@
     color: #3b4559;
     font-weight: bold;
   }
+}
+@media only screen and (min-width: 820px) {
+  .ContainerCardsAnfInv {
+    margin-top: 0px;
+  }
+
 }
 
 @media only screen and (min-width: 1280px) {

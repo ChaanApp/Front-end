@@ -25,7 +25,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 768px) {
   .ContainerCardAbout {
     flex-direction: row;
     justify-content: space-evenly;
@@ -35,9 +35,19 @@
   }
   .ContainerSimbolos {
     justify-content: space-around;
-    width: 300px;
+    width: 220px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .ContainerSimbolos {
+    width: 250px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .ContainerSimbolos {
+   
+    width: 300px;
+  }
 }
