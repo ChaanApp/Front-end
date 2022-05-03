@@ -8,8 +8,11 @@
   display: -ms-flexbox;
   display: flex;
   height: 80px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .containerIconMenu {
@@ -18,6 +21,13 @@
 
 .containerLogo {
   width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 15px;
 }
 
 .iconMenu {
@@ -25,7 +35,7 @@
 }
 
 .iconLogo {
-  width: 50px;
+  width: 55px;
 }
 
 .textNav {
