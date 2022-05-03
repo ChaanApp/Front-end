@@ -40,6 +40,7 @@ export default function MyInvitees() {
     <div className={styles.maincontainer}>
       <div className={styles.miniheader}>
         <h3>My Events</h3>
+        <p>|</p>
         <h3>PROPS PAPU</h3>
       </div>
       <div className={styles.miniheader}>
@@ -47,7 +48,7 @@ export default function MyInvitees() {
         <h4>Invitation</h4>
         <h4> Invitees </h4>
       </div>
-      <div>
+      <div style={{ height: 600, width: '100%' }}>
         <DataGrid
           rows={rows}
           columns={columns}
