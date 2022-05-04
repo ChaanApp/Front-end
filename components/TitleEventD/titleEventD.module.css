@@ -25,6 +25,22 @@
   margin-top: 15px;
 }
 
+.btnDE {
+  border-radius: 8px;
+  background-color: #736ced;
+  color: white;
+  width: 90%;
+  height: 50px;
+  font-size: 16px;
+  border-style: none;
+  margin-bottom: 24px;
+}
+
+.btnDE:hover {
+  background-color: #9f9fed !important;
+  cursor: pointer !important;
+}
+
 @media only screen and (min-width: 768px) {
   .ContainerEventD {
     display: block;
@@ -47,6 +63,9 @@
   .textEventDH1 {
     margin: 0;
     font-size: 28px;
+  }
+  .btnDE {
+    width: 35%;
   }
 }
 
@@ -71,6 +90,9 @@
   }
   .textEventDH1 {
     margin: 0;
+  }
+  .btnDE {
+    width: 20%;
   }
 }
 /*# sourceMappingURL=titleEventD.module.css.map */

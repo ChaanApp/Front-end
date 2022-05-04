@@ -44,11 +44,11 @@ export default function EventInformation() {
               />
             </div>
             <div>
-              <p className={styles.upInputLogin}>Country</p>
+              <p className={styles.upInputLogin}>Details event</p>
               <input
                 className={styles.inputLogin}
                 type="text"
-                placeholder="Contry"
+                placeholder="Details event"
               />
             </div>
           </div>

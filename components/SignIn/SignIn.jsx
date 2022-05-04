@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./signin.module.scss";
+import styles from "./signIn.module.scss";
 
 export default function SignUser() {
   return (
@@ -32,7 +32,7 @@ export default function SignUser() {
         </div>
       </div>
       <div className={styles.contImgLoginW}>
-        <img className={styles.imgLoginW} src="/picLogW.jpg" alt="" />
+        <img className={styles.imgLoginW} src="/singinuser.jpg" alt="" />
       </div>
     </div>
   );

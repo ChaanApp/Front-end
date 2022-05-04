@@ -23,7 +23,7 @@ export default function NavbarUser() {
           <a className={styles.ancorStylesTwo}>Soy invitado</a>
           <a className={styles.ancorStylesTwo}>Crear un evento</a>
           <div className={styles.contentancorMenuWThree}>
-            <a>Nasme User</a>
+            <a className={styles.ancorNavLog}>Nasme User</a>
           </div>
           <img className={styles.iconLogo} src="/chaanApp.png" alt="" />
         </div>

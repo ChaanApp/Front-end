@@ -23,9 +23,9 @@ export default function NavbarLogin() {
           <a className={styles.ancorStylesTwo}>Soy invitado</a>
           <a className={styles.ancorStylesTwo}>Crear un evento</a>
           <div className={styles.contentancorMenuWThree}>
-            <a>Login</a>
+            <a className={styles.ancorNavLog}>Login</a>
             <div>|</div>
-            <a>SignUp</a>
+            <a className={styles.ancorNavLog}>SignUp</a>
           </div>
 
           <img className={styles.iconLogo} src="/chaanApp.png" alt="" />

@@ -39,6 +39,19 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .ancorNavLog:hover {
+    color: #9f9fed;
+    cursor: pointer;
+  }
+  .ancorStylesOne:hover {
+    color: #7A8082;
+    cursor: pointer;
+  }
+
+  .ancorStylesTwo:hover {
+    color: #7A8082;
+    cursor: pointer;
+  }
   .NavScssM {
     display: none;
   }
@@ -75,12 +88,12 @@
   }
   .ancorStylesOne {
     font-size: 14px;
-    color: #3B4559;
+    color: #3b4559;
     font-weight: bold;
   }
   .ancorStylesTwo {
     font-size: 14px;
-    color: #3B4559;
+    color: #3b4559;
   }
 }
 @media only screen and (min-width: 820px) {

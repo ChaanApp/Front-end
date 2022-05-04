@@ -5,6 +5,10 @@
   margin-top: 35%;
   margin-bottom: 15%;
 }
+.btnHome:hover {
+  background-color: #9f9fed !important;
+  cursor: pointer !important;
+}
 .textH1 {
   color: #736ced;
   font-size: 40px;
@@ -19,6 +23,8 @@
 }
 .btnHome {
   background-color: #736ced !important;
+  width: 327px;
+  height: 50px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -43,10 +49,18 @@
     width: 10px;
     font-size: 1.8rem;
   }
+  .btnHome {
+    width: 227px;
+    height: 50px;
+  }
 }
 @media only screen and (min-width: 820px) {
   .ContainerTitleHBnt {
     margin-top: 0px;
+  }
+  .btnHome:hover {
+    background-color: #9f9fed;
+    cursor: pointer;
   }
 }
 
@@ -71,5 +85,8 @@
   .textH1 {
     margin: 0;
     font-size: 3.5rem;
+  }
+  .btnHome {
+    width: 350px;
   }
 }

@@ -5,6 +5,10 @@
   margin-top: 25%;
   margin-left: 38px;
 }
+.btnL:hover {
+  background-color: #9f9fed;
+  cursor: pointer;
+}
 .cardLogin {
   width: 327px;
   height: 260px;
@@ -120,7 +124,7 @@
   .contetaContaseña {
     margin-left: 150px;
   }
-  .btnL{
+  .btnL {
     margin-left: 90px;
   }
 }

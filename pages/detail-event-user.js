@@ -1,7 +1,7 @@
 import NavbarUser from "../components/NavbarUser/NavbarUser";
 import HeaderCardEvent from "../components/HeaderCardEvent/HeaderCardEvent";
-import TitleEventD from "../components/TitleEventD/TitleEventD";
-import CardDetailEvent from "../components/CardDetailEvent/CardDetailEvent";
+import TitleEventDUser from "../components/TitleEventDUser/TitleEventDUser";
+import CardDetailEventUser from "../components/CardDetailEventUser/CardDetailEventUser";
 import Footer from "../components/Footer/Footer";
 
 export default function About() {
@@ -9,8 +9,8 @@ export default function About() {
     <div>
       <NavbarUser> </NavbarUser>
       <HeaderCardEvent></HeaderCardEvent>
-      <TitleEventD></TitleEventD>
-      <CardDetailEvent></CardDetailEvent>
+      <TitleEventDUser></TitleEventDUser>
+      <CardDetailEventUser></CardDetailEventUser>
       <Footer></Footer>
     </div>
   );

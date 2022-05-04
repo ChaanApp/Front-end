@@ -56,7 +56,7 @@ export default function ContinueRegister() {
         </div>
       </div>
       <div className={styles.contImgLoginW}>
-        <img className={styles.imgLoginW} src="/picLogW.jpg" alt="" />
+        <img className={styles.imgLoginW} src="/registro.jpg" alt="" />
       </div>
     </div>
   );
