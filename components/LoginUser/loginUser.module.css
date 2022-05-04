@@ -13,6 +13,11 @@
   cursor: pointer;
 }
 
+.aContaseña:hover {
+  color: #9f9fed;
+  cursor: pointer;
+}
+
 .cardLogin {
   width: 327px;
   height: 260px;
