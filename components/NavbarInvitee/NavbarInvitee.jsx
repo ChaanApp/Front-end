@@ -19,7 +19,7 @@ export default function NavbarInvitee() {
           <p className={styles.textNav}>cha'an</p>
         </div>
         <div className={styles.contentancorMenuWTwo}>
-          <a className={styles.ancorStylesOne}> ¿Qué es cha’an?</a>
+          <a className={styles.ancorStylesOne}> ¿Qué es cha'an?</a>
           <a className={styles.ancorStylesTwo}>Soy invitado</a>
           <a className={styles.ancorStylesTwo}>Crear un evento</a>
           <div className={styles.contentancorMenuWThree}>

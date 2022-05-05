@@ -22,15 +22,21 @@ function ResponsiveDrawer(props) {
         <a className={styles.aOneMenuM} href="">
           Login
         </a>
-        <a className={styles.aMenuM} href="">
-          ¿Qué es cha’an?
-        </a>
-        <a className={styles.aMenuM} href="">
-          Soy invitado
-        </a>
-        <a className={styles.aTwoMenuM} href="">
-          Crear un evento
-        </a>
+        <Link href="/">
+          <a className={styles.aMenuM} href="">
+            ¿Qué es cha’an?
+          </a>
+        </Link>
+        <Link href="/login-invitee">
+          <a className={styles.aMenuM} href="">
+            Soy invitado
+          </a>
+        </Link>
+        <Link href="/registerEvent">
+          <a className={styles.aTwoMenuM} href="">
+            Crear un evento
+          </a>
+        </Link>
       </div>
       <div className={styles.iconDot}>
         <FiberManualRecordIcon sx={{ fontSize: 34 }} />

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./cardsMyEventsOrganizer.module.scss";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import Link from "next/link";
 
 export default function CardsMyEventsOrganizer() {
   return (
@@ -33,10 +34,12 @@ export default function CardsMyEventsOrganizer() {
       </div>
       <div className={styles.contentCardMyEvents}>
         <div className={styles.containerCardMyEvents}>
-          <div className={styles.cardMyEventsDurazno}>
-            <FiberManualRecordIcon></FiberManualRecordIcon>
-            <h3 className={styles.cardMyEventsTitle}> Mis eventos</h3>
-          </div>
+          <Link href="/dashboard-eventos">
+            <div className={styles.cardMyEventsDurazno}>
+              <FiberManualRecordIcon></FiberManualRecordIcon>
+              <h3 className={styles.cardMyEventsTitle}> Mis eventos</h3>
+            </div>
+          </Link>
           <div className={styles.cardMyEventsMorado}>
             <FiberManualRecordIcon></FiberManualRecordIcon>
             <h3 className={styles.cardMyEventsTitle}> Mis invitaciones</h3>

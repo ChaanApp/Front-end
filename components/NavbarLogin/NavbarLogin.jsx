@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./navbarLogin.module.scss";
 import ResponsiveDrawer from "../ResponsiveDrawer/ResponsiveDrawer";
+import Link from "next/link";
 
 export default function NavbarLogin() {
   return (
@@ -19,13 +20,23 @@ export default function NavbarLogin() {
           <p className={styles.textNav}>cha'an</p>
         </div>
         <div className={styles.contentancorMenuWTwo}>
-          <a className={styles.ancorStylesOne}> ¿Qué es cha’an?</a>
-          <a className={styles.ancorStylesTwo}>Soy invitado</a>
-          <a className={styles.ancorStylesTwo}>Crear un evento</a>
+          <Link href="/">
+            <a className={styles.ancorStylesOne}> ¿Qué es cha'an?</a>
+          </Link>
+          <Link href="/login-invitee">
+            <a className={styles.ancorStylesTwo}>Soy invitado</a>
+          </Link>
+          <Link href="/registerEvent">
+            <a className={styles.ancorStylesTwo}>Crear un evento</a>
+          </Link>
           <div className={styles.contentancorMenuWThree}>
-            <a className={styles.ancorNavLog}>Login</a>
+            <Link href="/login-user">
+              <a className={styles.ancorNavLog}>Login</a>
+            </Link>
             <div>|</div>
-            <a className={styles.ancorNavLog}>SignUp</a>
+            <Link href="/signinUser">
+              <a className={styles.ancorNavLog}>SignUp</a>
+            </Link>
           </div>
 
           <img className={styles.iconLogo} src="/chaanApp.png" alt="" />

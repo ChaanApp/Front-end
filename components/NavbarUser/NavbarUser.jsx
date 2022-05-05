@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./navbarUser.module.scss";
 import ResponsiveDrawerUser from "../ResponsiveDrawerUser/ResponsiveDrawerUser";
+import Link from "next/link";
 
 export default function NavbarUser() {
   return (
@@ -19,11 +20,19 @@ export default function NavbarUser() {
           <p className={styles.textNav}>cha'an</p>
         </div>
         <div className={styles.contentancorMenuWTwo}>
-          <a className={styles.ancorStylesOne}> ¿Qué es cha’an?</a>
-          <a className={styles.ancorStylesTwo}>Soy invitado</a>
-          <a className={styles.ancorStylesTwo}>Crear un evento</a>
+          <Link href="/">
+            <a className={styles.ancorStylesOne}> ¿Qué es cha'an?</a>
+          </Link>
+          <Link href="/login-invitee">
+            <a className={styles.ancorStylesTwo}>Soy invitado</a>
+          </Link>
+          <Link href="/registerEvent">
+            <a className={styles.ancorStylesTwo}>Crear un evento</a>
+          </Link>
           <div className={styles.contentancorMenuWThree}>
-            <a className={styles.ancorNavLog}>Nasme User</a>
+            <Link href="/dashboard-organizer">
+              <a className={styles.ancorNavLog}>Nasme User</a>
+            </Link>
           </div>
           <img className={styles.iconLogo} src="/chaanApp.png" alt="" />
         </div>
