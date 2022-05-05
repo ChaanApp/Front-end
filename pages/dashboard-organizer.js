@@ -10,7 +10,7 @@ export default function About() {
 
   useEffect(() => {
     const miStorage = window.localStorage;
-    const token = miStorage.getItem("tokenUser");
+    const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
 
     if (!token) {
@@ -22,8 +22,7 @@ export default function About() {
         const user = await fetch(url, {
           method: "GET",
           headers: {
-            Authorization:
-              "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNzIwODNmMmM2MDQ2NGMzYzQyMDJmZSIsImlhdCI6MTY1MTY0NTIyMiwiZXhwIjoxNjUxNjgxMjIyfQ.kxDMuQ-FIB294gNP4nh-ZZQCHKmAlTfhel0e2duPDNU",
+            Authorization: token,
           },
         })
           .then((res) => res.json())

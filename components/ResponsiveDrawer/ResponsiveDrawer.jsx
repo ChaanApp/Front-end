@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Drawer from "@mui/material/Drawer";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import Link from "next/link";   
-
+import Link from "next/link";
 
 const drawerWidth = 281;
 
@@ -19,27 +18,32 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div className={styles.ContainerAMenuM}>
-      <h2 className={styles.TitleMenuDot}> cha’an</h2>
+      <h2 className={styles.TitleMenuDot}> cha'an</h2>
       <div className={styles.ContainerAMenuM}>
-      <Link href="/">
-        <a className={styles.aOneMenuM} href="">
-          Login
-        </a>
+        <Link href="/login-user">
+          <a className={styles.aOneMenuM} href="">
+            Login
+          </a>
+        </Link>
+        <Link href="/signinUser">
+          <a className={styles.aOneMenuMtwo} href="">
+            SignUp
+          </a>
         </Link>
         <Link href="/">
-        <a className={styles.aMenuM} href="">
-          ¿Qué es cha’an?
-        </a>
+          <a className={styles.aMenuM} href="">
+            ¿Qué es cha'an?
+          </a>
         </Link>
         <Link href="/login-invitee">
-        <a className={styles.aMenuM} href="">
-          Soy invitado
-        </a>
+          <a className={styles.aMenuM} href="">
+            Soy invitado
+          </a>
         </Link>
         <Link href="/registerEvent">
-        <a className={styles.aTwoMenuM} href="">
-          Crear un evento
-        </a>
+          <a className={styles.aTwoMenuM} href="">
+            Crear un evento
+          </a>
         </Link>
       </div>
       <div className={styles.iconDot}>

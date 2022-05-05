@@ -34,12 +34,23 @@ export default function LoginUser() {
       .then((res) => res.json())
       .then((response) => {
         console.log(response.data);
-        localStorage.setItem(
-          "tokenUser",
-          JSON.stringify(response.data.token.token)
-        );
-        localStorage.setItem("idUser", JSON.stringify(response.data.token.id));
-        router.push("/dashboard-organizer");
+        if (response.data.token.token) {
+          localStorage.setItem(
+            "tokenUser",
+            JSON.stringify(response.data.token.token)
+          );
+          localStorage.setItem(
+            "idUser",
+            JSON.stringify(response.data.token.id)
+          );
+          router.push("/dashboard-organizer");
+        } else {
+          alert(response.data);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("correo y/o password incorrectos");
       });
   }
 
