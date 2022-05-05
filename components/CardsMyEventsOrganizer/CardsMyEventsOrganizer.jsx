@@ -40,14 +40,18 @@ export default function CardsMyEventsOrganizer() {
               <h3 className={styles.cardMyEventsTitle}> Mis eventos</h3>
             </div>
           </Link>
-          <div className={styles.cardMyEventsMorado}>
-            <FiberManualRecordIcon></FiberManualRecordIcon>
-            <h3 className={styles.cardMyEventsTitle}> Mis invitaciones</h3>
-          </div>
-          <div className={styles.cardMyEventsPink}>
-            <FiberManualRecordIcon></FiberManualRecordIcon>
-            <h3 className={styles.cardMyEventsTitle}> Crea un eventos</h3>
-          </div>
+          <Link href="/invitees">
+            <div className={styles.cardMyEventsMorado}>
+              <FiberManualRecordIcon></FiberManualRecordIcon>
+              <h3 className={styles.cardMyEventsTitle}> Mis invitaciones</h3>
+            </div>
+          </Link>
+          <Link href="/registerEvent">
+            <div className={styles.cardMyEventsPink}>
+              <FiberManualRecordIcon></FiberManualRecordIcon>
+              <h3 className={styles.cardMyEventsTitle}> Crea un eventos</h3>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
