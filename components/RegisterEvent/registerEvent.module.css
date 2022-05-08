@@ -1,11 +1,28 @@
 @charset "UTF-8";
-.containerLogin {
-  height: 600px;
+.containerFormRegisterEvent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 125vh;
+}
+
+.containerFormReg {
+  height: 110vh;
 }
 
 .contLogin {
   margin-top: 75px;
   margin-left: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btnL:hover {
@@ -15,7 +32,7 @@
 
 .cardLogin {
   width: 327px;
-  height: 450px;
+  height: 840px !important;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: -webkit-box;
@@ -25,10 +42,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
 }
 
 .inputLogin {
@@ -38,6 +55,7 @@
   border: none;
   background-color: #f7f7f7;
   margin-bottom: 12px;
+  padding-left: 16px;
 }
 
 .contentLogin {
@@ -81,7 +99,7 @@
 .upInputLogin {
   font-size: 12px;
   color: #3b4559;
-  margin-bottom: 0;
+  padding-bottom: 8px;
 }
 
 .lineLogin {
@@ -93,7 +111,7 @@
   border-radius: 5px;
 }
 
-.titleLogin {
+.titleForm {
   color: #3b4559;
   margin-bottom: 5px;
   font-size: 24px;
@@ -104,6 +122,18 @@
   display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .containerFormRegisterEvent {
+    height: 105vh;
+  }
+  .containerFormReg {
+    height: 90vh;
+  }
+  .cardLogin {
+    width: 600px !important;
+  }
+}
+
 @media only screen and (min-width: 820px) {
   .contentLogin {
     display: -webkit-box;
@@ -112,11 +142,14 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-left: 40px;
+  }
+  .containerFormReg {
+    height: 79vh;
   }
   .contImgLoginW {
     display: -webkit-box;
@@ -138,40 +171,62 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     height: 800px;
+  }
+  .containerFormRegisterEvent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 750px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 90vh;
+  }
+  .cardLogin {
+    width: 655px !important;
+  }
+  .contForm {
+    -webkit-padding-start: 40px;
+            padding-inline-start: 40px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .imgLoginW {
-    width: 600px;
-    height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .containerLogin {
-    margin-left: 10px;
-    width: 300px;
+  .containerFormRegisterEvent {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh !important;
   }
   .cardLogin {
-    width: 510px;
-    height: 450px;
-  }
-  .upInputLogin {
-    margin-top: 25px;
-  }
-  .inputLogin {
-    width: 450px;
-    height: 55px;
-  }
-  .contetaContaseña {
-    margin-left: 150px;
+    width: 1172px !important;
+    height: 500px !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 32px;
   }
   .btnL {
-    margin-left: 90px;
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=registerEvent.module.css.map */

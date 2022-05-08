@@ -50,7 +50,7 @@ export default function LoginUser() {
       })
       .catch((err) => {
         console.log(err);
-        alert("correo y/o password incorrectos");
+        alert("El email y/o contraseña son incorrectos");
       });
   }
 

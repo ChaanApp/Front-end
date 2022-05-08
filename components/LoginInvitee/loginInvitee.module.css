@@ -1,11 +1,12 @@
 @charset "UTF-8";
-.containerLogin {
-  height: 70vh;
+.containerLoginInvitee {
+  height: 71vh;
 }
 
-.contLogin {
+.contLoginInvitee {
   margin-top: 25%;
   margin-left: 38px;
+  margin-bottom: 32px;
 }
 
 .btnL:hover {
@@ -13,14 +14,14 @@
   cursor: pointer;
 }
 
-.aContaseña:hover {
+.aContaseñaInvitee:hover {
   color: #9f9fed;
   cursor: pointer;
 }
 
-.cardLogin {
+.cardLoginInvitee {
   width: 327px;
-  height: 260px;
+  height: 220px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: -webkit-box;
@@ -33,20 +34,19 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 10px 30px;
+  padding: 40px 30px;
 }
 
-.inputLogin {
+.inputLoginInvitee {
   width: 270px;
   height: 48px;
   border-radius: 8px;
   border: none;
   background-color: #f7f7f7;
   margin-bottom: 12px;
-  padding-left: 12px;
 }
 
-.contentLogin {
+.contentLoginInvitee {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,25 +72,25 @@
   margin-top: 32px;
 }
 
-.contetaContaseña {
+.contetaContaseñaInvitee {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   margin-top: 16px;
   margin-left: 60px;
 }
 
-.aContaseña {
+.aContaseñaInvitee {
   color: #736ced;
   font-size: 14px;
 }
 
-.upInputLogin {
+.upInputLoginInvitee {
   font-size: 12px;
   color: #3b4559;
   margin-bottom: 0;
 }
 
-.lineLogin {
+.lineLoginInvitee {
   height: 5px;
   margin-left: 0%;
   margin-right: 90%;
@@ -99,19 +99,19 @@
   border-radius: 5px;
 }
 
-.titleLogin {
+.titleLoginInvitee {
   color: #3b4559;
   margin-bottom: 5px;
   font-size: 24px;
   font-weight: bold;
 }
 
-.contImgLoginW {
+.contImgLoginInviteeW {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .contentLogin {
+  .contentLoginInvitee {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -124,59 +124,68 @@
             flex-direction: column;
     margin-left: 40px;
   }
-  .contImgLoginW {
+  .contImgLoginInviteeW {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 10px;
   }
-  .imgLoginW {
+  .imgLoginInviteeW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .containerLogin {
-    height: 80vh;
+  .containerLoginInvitee {
+    height: 86vh;
   }
-  .containerLoginAndImg {
+  .containerLoginInviteeAndImg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+  }
+  .cardLoginInvitee {
+    padding: 32px, 16px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .imgLoginW {
+  .imgLoginInviteeW {
     width: 600px;
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .containerLogin {
+  .containerLoginInvitee {
     margin-left: 10px;
     width: 300px;
   }
-  .cardLogin {
+  .cardLoginInvitee {
     width: 510px;
     height: 300px;
   }
-  .upInputLogin {
+  .upInputLoginInvitee {
     margin-top: 25px;
   }
-  .inputLogin {
+  .inputLoginInvitee {
     width: 450px;
     height: 55px;
   }
-  .contetaContaseña {
+  .contetaContaseñaInvitee {
     margin-left: 150px;
   }
   .btnL {
     margin-left: 90px;
   }
 }
-/*# sourceMappingURL=loginUser.module.css.map */
+/*# sourceMappingURL=loginInvitee.module.css.map */
