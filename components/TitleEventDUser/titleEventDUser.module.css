@@ -6,7 +6,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
-  margin-top: 25%;
+  margin-top: 10%;
   margin-bottom: 15%;
   margin-left: 24px;
 }
@@ -61,6 +61,18 @@
   margin-bottom: 24px;
 }
 
+.btnDEAI {
+  border-radius: 8px;
+  background-color: transparent;
+  color: #736ced;
+  width: 90%;
+  height: 50px;
+  font-size: 16px;
+  border-style: none;
+  margin-bottom: 24px;
+  border: 1px solid #736ced;
+}
+
 .ancorDE {
   color: #736ced;
   -webkit-text-decoration: underline #736ced;
@@ -79,7 +91,7 @@
             align-items: flex-start;
     text-align: left;
     margin-bottom: 10%;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 5%;
   }
   .textEventDTitleUser {
@@ -104,7 +116,7 @@
 
 @media only screen and (min-width: 1280px) {
   .ContainerEventDUser {
-    margin-top: 5%;
+    margin-top: 40px !important;
     margin-left: 5%;
     margin-bottom: 5px;
     display: block;

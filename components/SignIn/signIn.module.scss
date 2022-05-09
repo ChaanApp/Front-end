@@ -1,8 +1,8 @@
 .containerLogin {
-  height: 70vh;
+  height: 75vh;
 }
 .contLogin {
-  margin-top: 25%;
+  margin-top: 20%;
   margin-left: 38px;
 }
 .btnL:hover {
@@ -11,7 +11,7 @@
 }
 .cardLogin {
   width: 327px;
-  height: 260px;
+  height: 390px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
   flex-direction: column;
@@ -85,6 +85,7 @@
   .contImgLoginW {
     display: flex;
     height: 10px;
+    margin-top: 5%;
   }
   .imgLoginW {
     margin-top: 65px;
@@ -93,7 +94,8 @@
     object-fit: cover;
   }
   .containerLogin {
-    height: 80vh;
+    height: 86vh;
+    margin-top: 5%;
   }
   .containerLoginAndImg {
     display: flex;
@@ -106,14 +108,16 @@
     width: 600px;
     height: 500px;
     object-fit: cover;
+    margin-top: 0;
   }
   .containerLogin {
     margin-left: 10px;
     width: 300px;
+    margin-top: 0;
   }
   .cardLogin {
     width: 510px;
-    height: 300px;
+    height: 460px;
   }
   .upInputLogin {
     margin-top: 25px;
@@ -127,5 +131,12 @@
   }
   .btnL {
     margin-left: 90px;
+  }
+  .containerLogin {
+    height: 75vh;
+  }
+  .containerLoginAndImg {
+    height: 800px;
+    margin-bottom: 30px;
   }
 }

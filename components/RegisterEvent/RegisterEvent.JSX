@@ -1,12 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./registerEvent.module.scss";
-import InputTime from "../InputTime/InputTime";
-import InputDate from "../InputDate/InputDate";
-import FormSelectorCodVes from "../FormSelectorCodVes/FormSelectorCodVes";
-import FormSelectorTipEvent from "..//FormSelectorTipEvent/FormSelectorTipEvent";
-import InputLocation from "..//InputLocation/InputLocation";
+import { useRouter } from "next/router";
+import Form from "react-bootstrap/Form";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
 
-export default function RegisterEvent() {
+const useStyles = makeStyles((theme) => ({
+  container: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+  textField: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    width: 200,
+  },
+}));
+
+export default function RegisterEvent(props) {
+  const { existingEvent } = props;
+
+  const router = useRouter();
+  const [dataEvent, setDataEvent] = useState(existingEvent);
+  console.log("Evento que viene del padre", existingEvent);
+  console.log("Estado del componente", dataEvent);
+  const classes = useStyles();
+
+  useEffect(() => {
+    const miStorage = window.localStorage;
+    const token = JSON.parse(miStorage.getItem("tokenUser"));
+    const id = JSON.parse(miStorage.getItem("idUser"));
+
+    if (!token) {
+      // ruteo login
+      router.push("/login-user");
+    } else {
+      setDataEvent(existingEvent);
+    }
+  }, []);
+
+  function saveState(event) {
+    setDataEvent({
+      ...dataEvent,
+      [event.target.name]: event.target.value,
+    });
+  }
+
+  async function createEvent(event) {
+    event.preventDefault();
+    const miStorage = window.localStorage;
+    const token = JSON.parse(miStorage.getItem("tokenUser"));
+    const id = JSON.parse(miStorage.getItem("idUser"));
+    const url = `http://localhost:8080/events/${id}`;
+    const options = {
+      method: "POST",
+      body: JSON.stringify(dataEvent),
+      headers: {
+        Authorization: token,
+        "Content-Type": "application/json",
+      },
+    };
+    await fetch(url, options)
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("No se creo el evento");
+      });
+  }
+
   return (
     <div className={styles.containerFormRegisterEvent}>
       <div className={styles.containerFormReg}>
@@ -23,13 +87,35 @@ export default function RegisterEvent() {
                   className={styles.inputLogin}
                   type="text"
                   placeholder="Nombre del evento"
+                  name="eventName"
+                  onChange={saveState}
+                  value={dataEvent.eventName}
                 />
               </div>
               <div>
                 <p className={styles.upInputLogin}>Tipo de evento</p>
-                <FormSelectorTipEvent
+
+                <Form.Select
                   className={styles.inputLogin}
-                ></FormSelectorTipEvent>
+                  aria-label="Default select example2"
+                  name="eventType"
+                  onChange={saveState}
+                  value={dataEvent.eventType}
+                >
+                  <option>Tipo de evento</option>
+                  <option value="Boda">Boda</option>
+                  <option value="Cumpleaños">Cumpleaños</option>
+                  <option value="Bautizo">Bautizo</option>
+                  <option value="Baby Shower">Baby Shower</option>
+                  <option value="Graduación">Graduación</option>
+                  <option value="Concierto">Concierto</option>
+                  <option value="Exposición">Exposición</option>
+                  <option value="Quince Años">Quince Años</option>
+                  <option value="Clase">Clase</option>
+                  <option value="Deportivo">Deportivo</option>
+                  <option value="Conferencia">Conferencia</option>
+                  <option value="Esparcimiento">Esparcimiento</option>
+                </Form.Select>
               </div>
               <div>
                 <p className={styles.upInputLogin}>Detalles del evento</p>
@@ -37,31 +123,90 @@ export default function RegisterEvent() {
                   className={styles.inputLogin}
                   type="text"
                   placeholder="Detalles del evento"
+                  name="detailsEvent"
+                  onChange={saveState}
+                  value={dataEvent.detailsEvent}
                 />
               </div>
               <div>
                 <p className={styles.upInputLogin}>Código de vestimenta</p>
-                <FormSelectorCodVes></FormSelectorCodVes>
+                <Form.Select
+                  className={styles.containerFormCDV}
+                  aria-label="Default select example1"
+                  name="eventDressCode"
+                  onChange={saveState}
+                  value={dataEvent.eventDressCode}
+                >
+                  <option>Código de vestimenta</option>
+                  <option value="Formal">Formal</option>
+                  <option value="Informal">Informal</option>
+                  <option value="Casual">Casual</option>
+                  <option value="Negocios">Negocios</option>
+                  <option value="Coktail">Coktail</option>
+                </Form.Select>
               </div>
             </div>
 
             <div>
               <div>
                 <p className={styles.upInputLogin}>Fecha del evento</p>
-                <InputDate></InputDate>
+                <div className={styles.containerFormDE}>
+                  <form noValidate className={styles.textFormDE}>
+                    <TextField
+                      className={styles.textFormDE}
+                      name="eventDate"
+                      onChange={saveState}
+                      value={dataEvent.eventDate}
+                      id="date"
+                      type="date"
+                      InputLabelProps={{
+                        shrink: true,
+                      }}
+                    />
+                  </form>
+                </div>
               </div>
               <div>
                 <p className={styles.upInputLogin}>Hora del evento</p>
-                <InputTime></InputTime>
+                <div className={styles.containerFormTE}>
+                  <form className={styles.textFormTE} noValidate>
+                    <TextField
+                      className={styles.textFormTE}
+                      name="timeDate"
+                      onChange={saveState}
+                      value={dataEvent.timeDate}
+                      id="time"
+                      type="time"
+                      defaultValue="00:00"
+                      InputLabelProps={{
+                        shrink: true,
+                      }}
+                      inputProps={{
+                        step: 300, // 5 min
+                      }}
+                    />
+                  </form>
+                </div>
               </div>
+              {/*
               <div>
                 <p className={styles.upInputLogin}>Lugar del evento</p>
-                <InputLocation></InputLocation>
-              </div>
+                <input
+                  className={styles.inputLE}
+                  type="text"
+                  placeholder="Ubicación del evento"
+                  name="eventLocation"
+                  onChange={saveState}
+                  value={dataEvent.eventLocation}
+                />
+              </div>*/}
               <div>
                 <p className={styles.upInputLogin}>Numero de invitados</p>
                 <input
                   className={styles.inputLogin}
+                  name="eventNumInvitee"
+                  onChange={saveState}
+                  value={dataEvent.eventNumInvitee}
                   type="number"
                   placeholder="Numero de invitados"
                 />
@@ -71,7 +216,9 @@ export default function RegisterEvent() {
         </div>
       </div>
       <div className={styles.contentLogin}>
-        <button className={styles.btnL}>Completar registro</button>
+        <button className={styles.btnL} onClick={createEvent}>
+          Completar registro
+        </button>
       </div>
     </div>
   );

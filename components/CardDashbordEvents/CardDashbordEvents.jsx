@@ -3,7 +3,9 @@ import styles from "./cardDashbordEvents.module.scss";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-export default function CardDashbordEvents() {
+export default function CardDashbordEvents(props) {
+  console.log(props);
+  const events = props.events;
   return (
     <div className={styles.containerMyEventsAndImg}>
       <div className={styles.containerMyEvents}>
@@ -14,16 +16,26 @@ export default function CardDashbordEvents() {
           </div>
           <button className={styles.btnLMEW}>Crear evento</button>
         </div>
-        <div className={styles.contMyEventsinfo}>
-          <div className={styles.titleEvnt}>
-            <h3> # Nombre del evento</h3>
-          </div>
-          <div>
-            <a className={styles.ancorTitleEvnt} href="">
-              Editar
-            </a>
-          </div>
-        </div>
+
+        {events.map((event, i) => {
+          return (
+            <>
+              <div className={styles.contMyEventsinfo}>
+                <div className={styles.titleEvnt}>
+                  <h3>
+                    {i + 1}-{event.eventName}
+                  </h3>
+                </div>
+                <div>
+                  <a className={styles.ancorTitleEvnt} href="">
+                    Editar
+                  </a>
+                </div>
+              </div>
+            </>
+          );
+        })}
+
         <div className={styles.contMyEventsinfo}>
           <div className={styles.titleEvnt}>
             <h3> # Nombre del evento</h3>

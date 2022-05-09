@@ -3,8 +3,8 @@ import styles from "./signIn.module.scss";
 import { useRouter } from "next/router";
 
 const initialState = {
-  name: "dommi",
-  lastName: "dommi",
+  name: "",
+  lastName: "",
   email: "",
   password: "",
   city: "dommi",
@@ -38,7 +38,7 @@ export default function SignUser() {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-       /* console.log(response.data.organizer._id);
+        /* console.log(response.data.organizer._id);
         localStorage.setItem(
           "idUser",
           JSON.stringify(response.data.organizer._id)
@@ -56,6 +56,28 @@ export default function SignUser() {
         </div>
         <div className={styles.contentLogin}>
           <div className={styles.cardLogin}>
+            <div>
+              <p className={styles.upInputLogin}>Nombre</p>
+              <input
+                className={styles.inputLogin}
+                type="text"
+                placeholder="Nombre"
+                name="name"
+                onChange={saveState}
+                value={dataSignIn.name}
+              />
+            </div>
+            <div>
+              <p className={styles.upInputLogin}>Apellido</p>
+              <input
+                className={styles.inputLogin}
+                type="text"
+                placeholder="Apellido"
+                name="lastName"
+                onChange={saveState}
+                value={dataSignIn.lastName}
+              />
+            </div>
             <div>
               <p className={styles.upInputLogin}>Email</p>
               <input
