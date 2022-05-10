@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import NavbarUser from "../../components/NavbarUser/NavbarUser";
 import RegisterEvent from "../../components/RegisterEvent/RegisterEvent";
 import Footer from "../../components/Footer/Footer";

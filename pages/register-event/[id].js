@@ -53,7 +53,6 @@ export default function About() {
       getEvent();
     }
   }, [router.isReady]);
-
   return (
     <div>
       <NavbarUser> </NavbarUser>

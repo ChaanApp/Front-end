@@ -26,6 +26,10 @@ export default function RegisterEvent(props) {
   console.log("Estado del componente", dataEvent);
   const classes = useStyles();
 
+  //setTimeout(function () {
+  //  setDataEvent(existingEvent);
+  //}, 1000);
+
   useEffect(() => {
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));

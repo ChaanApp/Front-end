@@ -35,67 +35,6 @@ export default function CardDashbordEvents(props) {
             </>
           );
         })}
-
-        <div className={styles.contMyEventsinfo}>
-          <div className={styles.titleEvnt}>
-            <h3> # Nombre del evento</h3>
-          </div>
-          <div>
-            <a className={styles.ancorTitleEvnt} href="">
-              Editar
-            </a>
-          </div>
-        </div>
-        <div className={styles.contMyEventsinfo}>
-          <div className={styles.titleEvnt}>
-            <h3> # Nombre del evento</h3>
-          </div>
-          <div>
-            <a className={styles.ancorTitleEvnt} href="">
-              Editar
-            </a>
-          </div>
-        </div>
-        <div className={styles.contMyEventsinfo}>
-          <div className={styles.titleEvnt}>
-            <h3> # Nombre del evento</h3>
-          </div>
-          <div>
-            <a className={styles.ancorTitleEvnt} href="">
-              Editar
-            </a>
-          </div>
-        </div>
-        <div className={styles.contMyEventsinfo}>
-          <div className={styles.titleEvnt}>
-            <h3> # Nombre del evento</h3>
-          </div>
-          <div>
-            <a className={styles.ancorTitleEvnt} href="">
-              Editar
-            </a>
-          </div>
-        </div>
-        <div className={styles.contMyEventsinfo}>
-          <div className={styles.titleEvnt}>
-            <h3> # Nombre del evento</h3>
-          </div>
-          <div>
-            <a className={styles.ancorTitleEvnt} href="">
-              Editar
-            </a>
-          </div>
-        </div>
-        <div className={styles.contMyEventsinfo}>
-          <div className={styles.titleEvnt}>
-            <h3> # Nombre del evento</h3>
-          </div>
-          <div>
-            <a className={styles.ancorTitleEvnt} href="">
-              Editar
-            </a>
-          </div>
-        </div>
       </div>
       <Link href="/registerEvent">
         <button className={styles.btnLME}>Crear evento</button>
