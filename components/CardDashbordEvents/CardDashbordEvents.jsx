@@ -7,6 +7,7 @@ export default function CardDashbordEvents(props) {
   console.log(props);
   const events = props.events;
   return (
+    
     <div className={styles.containerMyEventsAndImg}>
       <div className={styles.containerMyEvents}>
         <div className={styles.contMyEvents}>

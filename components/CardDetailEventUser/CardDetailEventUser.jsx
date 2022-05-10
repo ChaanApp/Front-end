@@ -10,6 +10,7 @@ export default function CardDetailEvent(props) {
   const event = props.existingEvent;
 
   return (
+
     <div className={styles.containerDE}>
       <div className={styles.containerImgTitleDescDE}>
         <div className={styles.conticonDetEvtTitle}>

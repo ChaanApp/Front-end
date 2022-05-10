@@ -12,22 +12,21 @@ const initialState = {
   telephone: "0000000000",
 };
 
-export default function SignUser() {
+export default function SignUser() { //props
   const router = useRouter();
 
-  const [dataSignIn, setDataSignIn] = useState(initialState);
+  const [dataSignIn, setDataSignIn] = useState(initialState); //cambiar NOM Invite
 
   function saveState(event) {
-    // initialState[event.target.name] = event.target.value;
     setDataSignIn({
       ...dataSignIn,
       [event.target.name]: event.target.value,
     });
   }
 
-  async function createUser(event) {
+  async function createUser(event) { //cambiar nom
     event.preventDefault();
-    const url = "https://api.chaan.site/organizer/signup";
+    const url = "https://api.chaan.site/organizer/signup"; //urlposman $id
     const options = {
       method: "POST",
       body: JSON.stringify(dataSignIn),
@@ -43,10 +42,13 @@ export default function SignUser() {
           "idUser",
           JSON.stringify(response.data.organizer._id)
         );*/
-        router.push("/login-user");
-      });
+        router.push("/login-user"); // quitar poner alert se creo invite
+      })
+      .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
-
+//agregar en cada imput el name y valiu  name="name"
+      //onChange={saveState}
+        //        value={dataSignIn.name}
   return (
     <div className={styles.containerLoginAndImg}>
       <div className={styles.containerLogin}>

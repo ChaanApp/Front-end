@@ -124,7 +124,7 @@ export default function RegisterEvent(props) {
               <div>
                 <p className={styles.upInputLogin}>Detalles del evento</p>
                 <input
-                  className={styles.inputLogin}
+                  className={styles.inputLoginDE}
                   type="text"
                   placeholder="Detalles del evento"
                   name="detailsEvent"
@@ -132,6 +132,8 @@ export default function RegisterEvent(props) {
                   value={dataEvent.detailsEvent}
                 />
               </div>
+            </div>
+            <div className={styles.contCardLoginB}>
               <div>
                 <p className={styles.upInputLogin}>Código de vestimenta</p>
                 <Form.Select
@@ -149,9 +151,6 @@ export default function RegisterEvent(props) {
                   <option value="Coktail">Coktail</option>
                 </Form.Select>
               </div>
-            </div>
-
-            <div>
               <div>
                 <p className={styles.upInputLogin}>Fecha del evento</p>
                 <div className={styles.containerFormDE}>

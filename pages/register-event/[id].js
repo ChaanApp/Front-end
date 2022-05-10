@@ -20,12 +20,12 @@ const initialState = {
 };
 
 export default function About() {
-  const [dataEvent, setDataEvent] = useState(initialState);
+  const [dataEvent, setDataEvent] = useState(initialState); //dataIdEvent
   //const [token, setToken] = useState();
   const router = useRouter();
 
   useEffect(() => {
-    if (!router.isReady) return;
+    if (!router.isReady) return; //
     const miStorage = window.localStorage;
     let token = JSON.parse(miStorage.getItem("tokenUser"));
     const idUser = JSON.parse(miStorage.getItem("idUser"));
@@ -46,13 +46,13 @@ export default function About() {
             return data.success ? data.data.events : initialState;
             //console.log(data.success ? data.data.events : data.data.message);
           })
-          .catch((err) => console.log("Hubo un error en la peticion", err));
-        setDataEvent(event);
+          .catch((err) => console.log("Hubo un error en la peticion", err)); 
+        setDataEvent(event); //se setea al estado router quiery id
       }
 
       getEvent();
     }
-  }, [router.isReady]);
+  }, [router.isReady]); //
   return (
     <div>
       <NavbarUser> </NavbarUser>
