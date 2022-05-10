@@ -6,6 +6,22 @@
   height: 125vh;
 }
 
+.inputLoginDE {
+  width: 270px;
+  height: 120px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f7f7f7;
+  margin-bottom: 12px;
+  padding-left: 16px;
+  color: #3b4559;
+}
+.contCardLogin {
+  margin-top: 24px;
+}
+.contCardLoginB {
+  margin-top: 0;
+}
 .containerFormReg {
   height: 110vh;
 }
@@ -27,6 +43,55 @@
   align-items: center;
   padding: 0;
 }
+.containerFormCDV {
+  width: 265px;
+  height: 48px;
+  color: #92959a;
+  border: none;
+  background: #f7f7f7;
+  padding-left: 12px;
+}
+.containerFormDE {
+  width: 265px !important;
+  height: 48px !important;
+  color: #92959a !important;
+  border: none !important;
+  background: #f7f7f7 !important;
+  padding-left: 12px !important;
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+.textFormDE {
+  width: 95% !important;
+  color: #92959a !important;
+}
+
+.containerFormTE {
+  width: 265px !important;
+  height: 48px !important;
+  color: #92959a !important;
+  border: none !important;
+  background: #f7f7f7 !important;
+  padding-left: 12px !important;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.textFormTE {
+  width: 95% !important;
+}
+
+.inputLE {
+  width: 270px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f7f7f7;
+  margin-bottom: 12px;
+  padding-left: 16px;
+}
+
 .inputLogin {
   width: 270px;
   height: 48px;
@@ -35,6 +100,7 @@
   background-color: #f7f7f7;
   margin-bottom: 12px;
   padding-left: 16px;
+  color: #3b4559;
 }
 .contentLogin {
   display: flex;
@@ -155,5 +221,8 @@
   }
   .btnL {
     margin-top: 0;
+  }
+  .contCardLoginB {
+    margin-top: 24px;
   }
 }

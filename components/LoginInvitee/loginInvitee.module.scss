@@ -16,7 +16,7 @@
 }
 .cardLoginInvitee {
   width: 327px;
-  height: 220px;
+  height: 180px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
   flex-direction: column;
@@ -30,13 +30,14 @@
   border: none;
   background-color: #f7f7f7;
   margin-bottom: 12px;
+  padding-left: 12px;
 }
 .contentLoginInvitee {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.btnL {
+.btnLI {
   background-color: #736ced;
   color: white;
   border-radius: 8px;
@@ -47,14 +48,21 @@
   font-size: 16px;
   margin-top: 32px;
 }
+.btnLI:hover {
+  background-color: #9f9fed;
+  cursor: pointer;
+}
 .contetaContaseñaInvitee {
-  text-decoration-line: underline;
   margin-top: 16px;
-  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .aContaseñaInvitee {
   color: #736ced;
   font-size: 14px;
+  margin-top: 32px;
 }
 .upInputLoginInvitee {
   font-size: 12px;
@@ -84,8 +92,8 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 40px;
   }
+
   .contImgLoginInviteeW {
     display: flex;
     height: 10px;
@@ -98,12 +106,13 @@
   }
   .containerLoginInvitee {
     height: 86vh;
+    margin-left: 30px;
   }
   .containerLoginInviteeAndImg {
     display: flex;
     justify-content: start;
     flex-direction: row-reverse;
-    margin: 0;
+    margin: 25px;
     padding: 0;
   }
   .cardLoginInvitee {
@@ -111,19 +120,29 @@
   }
 }
 
+@media only screen and (min-width: 820px) {
+  .containerLoginInvitee {
+    height: 86vh;
+    margin-left: 80px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
+  .containerLoginInviteeAndImg {
+    margin-left: 70px;
+  }
   .imgLoginInviteeW {
     width: 600px;
     height: 500px;
     object-fit: cover;
   }
   .containerLoginInvitee {
-    margin-left: 10px;
+    margin-left: 40px;
     width: 300px;
   }
   .cardLoginInvitee {
     width: 510px;
-    height: 300px;
+    height: 200px;
   }
   .upInputLoginInvitee {
     margin-top: 25px;
@@ -133,7 +152,7 @@
     height: 55px;
   }
   .contetaContaseñaInvitee {
-    margin-left: 150px;
+    margin-left: 100px;
   }
   .btnL {
     margin-left: 90px;

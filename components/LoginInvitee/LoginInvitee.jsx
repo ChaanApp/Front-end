@@ -21,10 +21,11 @@ export default function LoginInvitee() {
                 name="password"
               />
             </div>
-            <div className={styles.contetaContaseñaInvitee}>
+          </div>
+          <div className={styles.contetaContaseñaInvitee}>
+              <button className={styles.btnLI}>Entar como invitado</button>
               <a className={styles.aContaseñaInvitee}>Forgot my password</a>
             </div>
-          </div>
         </div>
       </div>
       <div className={styles.contImgLoginInviteeW}>

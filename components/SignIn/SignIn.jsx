@@ -3,8 +3,8 @@ import styles from "./signIn.module.scss";
 import { useRouter } from "next/router";
 
 const initialState = {
-  name: "dommi",
-  lastName: "dommi",
+  name: "",
+  lastName: "",
   email: "",
   password: "",
   city: "dommi",
@@ -12,22 +12,21 @@ const initialState = {
   telephone: "0000000000",
 };
 
-export default function SignUser() {
+export default function SignUser() { //props
   const router = useRouter();
 
-  const [dataSignIn, setDataSignIn] = useState(initialState);
+  const [dataSignIn, setDataSignIn] = useState(initialState); //cambiar NOM Invite
 
   function saveState(event) {
-    // initialState[event.target.name] = event.target.value;
     setDataSignIn({
       ...dataSignIn,
       [event.target.name]: event.target.value,
     });
   }
 
-  async function createUser(event) {
+  async function createUser(event) { //cambiar nom
     event.preventDefault();
-    const url = "https://api.chaan.site/organizer/signup";
+    const url = "https://api.chaan.site/organizer/signup"; //urlposman $id
     const options = {
       method: "POST",
       body: JSON.stringify(dataSignIn),
@@ -38,15 +37,18 @@ export default function SignUser() {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-       /* console.log(response.data.organizer._id);
+        /* console.log(response.data.organizer._id);
         localStorage.setItem(
           "idUser",
           JSON.stringify(response.data.organizer._id)
         );*/
-        router.push("/login-user");
-      });
+        router.push("/login-user"); // quitar poner alert se creo invite
+      })
+      .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
-
+//agregar en cada imput el name y valiu  name="name"
+      //onChange={saveState}
+        //        value={dataSignIn.name}
   return (
     <div className={styles.containerLoginAndImg}>
       <div className={styles.containerLogin}>
@@ -56,6 +58,28 @@ export default function SignUser() {
         </div>
         <div className={styles.contentLogin}>
           <div className={styles.cardLogin}>
+            <div>
+              <p className={styles.upInputLogin}>Nombre</p>
+              <input
+                className={styles.inputLogin}
+                type="text"
+                placeholder="Nombre"
+                name="name"
+                onChange={saveState}
+                value={dataSignIn.name}
+              />
+            </div>
+            <div>
+              <p className={styles.upInputLogin}>Apellido</p>
+              <input
+                className={styles.inputLogin}
+                type="text"
+                placeholder="Apellido"
+                name="lastName"
+                onChange={saveState}
+                value={dataSignIn.lastName}
+              />
+            </div>
             <div>
               <p className={styles.upInputLogin}>Email</p>
               <input

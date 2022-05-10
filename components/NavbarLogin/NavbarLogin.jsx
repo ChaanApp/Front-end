@@ -26,7 +26,7 @@ export default function NavbarLogin() {
           <Link href="/login-invitee">
             <a className={styles.ancorStylesTwo}>Soy invitado</a>
           </Link>
-          <Link href="/registerEvent">
+          <Link href="/registerEvent/organizer">
             <a className={styles.ancorStylesTwo}>Crear un evento</a>
           </Link>
           <div className={styles.contentancorMenuWThree}>

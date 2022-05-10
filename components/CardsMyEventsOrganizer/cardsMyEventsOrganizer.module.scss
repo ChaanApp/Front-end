@@ -4,6 +4,10 @@
   margin-left: 24px;
   margin-bottom: 32px;
   color: #3b4559;
+  height: auto !important;
+}
+.contInfoMyEvents {
+  width: 100%;
 }
 .lineaH {
   background-color: #c8c9cb;
@@ -100,7 +104,9 @@
   }
   .cardMyEventsPink {
     width: 170px;
-
   }
-  
+  .contInfoMyEvents {
+    width: 40%;
+    margin-left: 30px;
+  }
 }

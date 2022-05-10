@@ -3,34 +3,28 @@ import styles from "./cardsMyEventsOrganizer.module.scss";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import Link from "next/link";
 
-export default function CardsMyEventsOrganizer() {
+export default function CardsMyEventsOrganizer(props) {
+  console.log(props);
+  const events = props.events;
+
   return (
     <div className={styles.contentCardMyEventsTitleAndCards}>
       <div className={styles.contInfoMyEvents}>
-        <div>
-          <h3> Eventos próximos</h3>
-          <div>
-            <h4>Boda</h4>
-            <p>Creado el 28 de febrero de 2022</p>
-          </div>
-        </div>
-        <div className={styles.lineaH}></div>
-        <div>
-          <h3> Eventos próximos</h3>
-          <div>
-            <h4>Boda</h4>
-            <p>Creado el 28 de febrero de 2022</p>
-          </div>
-        </div>
-        <div className={styles.lineaH}></div>
-        <div>
-          <h3> Eventos próximos</h3>
-          <div>
-            <h4>Boda</h4>
-            <p>Creado el 28 de febrero de 2022</p>
-          </div>
-        </div>
-        <div className={styles.lineaH}></div>
+        <h3> Eventos próximos</h3>
+
+        {events.map((event) => {
+          return (
+            <>
+              <div>
+                <div>
+                  <h4>{event.eventType}</h4>
+                  <p>Evento para {event.eventDate}</p>
+                </div>
+              </div>
+              <div className={styles.lineaH}></div>
+            </>
+          );
+        })}
       </div>
       <div className={styles.contentCardMyEvents}>
         <div className={styles.containerCardMyEvents}>

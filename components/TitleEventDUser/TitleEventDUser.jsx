@@ -10,6 +10,7 @@ export default function TitleEventD() {
       </p>
       <div className={styles.contentbtnDE}>
         <button className={styles.btnDE}>Edit event</button>
+        <button className={styles.btnDEAI}>Agragar invitado</button>
         <a className={styles.ancorDE}>Delete event</a>
       </div>
     </div>
