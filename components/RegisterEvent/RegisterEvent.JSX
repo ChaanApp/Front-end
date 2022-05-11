@@ -28,7 +28,7 @@ export default function RegisterEvent(props) {
   //}, 1000);
 
   useEffect(() => {
-    console.log(existingEvent._id);
+    console.log(props.);
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
@@ -53,7 +53,7 @@ export default function RegisterEvent(props) {
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
-    const url = `http://localhost:8080/events/${existingEvent._id}`;
+    const url = `http://localhost:8080/events/${existingEvent}`;
     const editEvent = {
       ...dataEvent,
       eventLocation: {

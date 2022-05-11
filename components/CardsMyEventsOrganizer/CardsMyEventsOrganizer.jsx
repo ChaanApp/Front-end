@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./cardsMyEventsOrganizer.module.scss";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function CardsMyEventsOrganizer(props) {
   console.log(props);
@@ -17,7 +19,11 @@ export default function CardsMyEventsOrganizer(props) {
             <>
               <div>
                 <div>
-                  <h4>{event.eventType}</h4>
+                  <Link
+                    href={`http://localhost:3000/detail-event-user/${event._id} `}
+                  >
+                    <h4>{event.eventType}</h4>
+                  </Link>
                   <p>Evento para {event.eventDate}</p>
                 </div>
               </div>
@@ -40,10 +46,12 @@ export default function CardsMyEventsOrganizer(props) {
               <h3 className={styles.cardMyEventsTitle}> Mis invitaciones</h3>
             </div>
           </Link>
-          <Link href="/register-event">
+          <Link
+            href={`http://localhost:3000/register-event/organizer`}
+          >
             <div className={styles.cardMyEventsPink}>
               <FiberManualRecordIcon></FiberManualRecordIcon>
-              <h3 className={styles.cardMyEventsTitle}> Crea un eventos</h3>
+              <h3 className={styles.cardMyEventsTitle}>Crea un eventos</h3>
             </div>
           </Link>
         </div>
