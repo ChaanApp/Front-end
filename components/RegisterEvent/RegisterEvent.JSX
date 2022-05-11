@@ -28,7 +28,8 @@ export default function RegisterEvent(props) {
   //}, 1000);
 
   useEffect(() => {
-    console.log(props.);
+    //if (!existingEvent._id) return;
+    console.log(props);
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
@@ -39,7 +40,7 @@ export default function RegisterEvent(props) {
     } else {
       setDataEvent(existingEvent);
     }
-  }, [props.existingEvent]);
+  }, [props]);
 
   function saveState(event) {
     setDataEvent({
@@ -53,7 +54,12 @@ export default function RegisterEvent(props) {
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
-    const url = `http://localhost:8080/events/${existingEvent}`;
+    const url = `http://localhost:8080/events/${
+      existingEvent._id && existingEvent._id.length > 0
+        ? existingEvent._id
+        : "organizer"
+    }`;
+
     const editEvent = {
       ...dataEvent,
       eventLocation: {
@@ -62,10 +68,15 @@ export default function RegisterEvent(props) {
         long: "dommi",
       },
     };
-    console.log(editEvent);
+    //console.log(editEvent);
     const options = {
-      method: "PUT",
-      body: JSON.stringify(editEvent),
+      method:
+        existingEvent._id && existingEvent._id.length > 0 ? "PUT" : "POST",
+      body: JSON.stringify(
+        existingEvent._id && existingEvent._id.length > 0
+          ? editEvent
+          : dataEvent
+      ),
       headers: {
         Authorization: token,
         "Content-Type": "application/json",
