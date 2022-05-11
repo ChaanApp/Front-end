@@ -13,6 +13,25 @@
   height: 125vh;
 }
 
+.inputLoginDE {
+  width: 270px;
+  height: 120px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f7f7f7;
+  margin-bottom: 12px;
+  padding-left: 16px;
+  color: #3b4559;
+}
+
+.contCardLogin {
+  margin-top: 24px;
+}
+
+.contCardLoginB {
+  margin-top: 0;
+}
+
 .containerFormReg {
   height: 110vh;
 }
@@ -288,6 +307,9 @@
   }
   .btnL {
     margin-top: 0;
+  }
+  .contCardLoginB {
+    margin-top: 24px;
   }
 }
 /*# sourceMappingURL=registerEvent.module.css.map */

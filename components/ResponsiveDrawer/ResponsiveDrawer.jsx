@@ -40,7 +40,7 @@ function ResponsiveDrawer(props) {
             Soy invitado
           </a>
         </Link>
-        <Link href="/registerEvent">
+        <Link href="/register-event">
           <a className={styles.aTwoMenuM} href="">
             Crear un evento
           </a>

@@ -40,7 +40,7 @@ export default function CardsMyEventsOrganizer(props) {
               <h3 className={styles.cardMyEventsTitle}> Mis invitaciones</h3>
             </div>
           </Link>
-          <Link href="/registerEvent">
+          <Link href="/register-event">
             <div className={styles.cardMyEventsPink}>
               <FiberManualRecordIcon></FiberManualRecordIcon>
               <h3 className={styles.cardMyEventsTitle}> Crea un eventos</h3>

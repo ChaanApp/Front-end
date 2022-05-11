@@ -1,12 +1,11 @@
 @charset "UTF-8";
-.containerLoginInvitee {
-  height: 71vh;
+.containerLogin {
+  height: 75vh;
 }
 
-.contLoginInvitee {
-  margin-top: 25%;
+.contLogin {
+  margin-top: 20%;
   margin-left: 38px;
-  margin-bottom: 32px;
 }
 
 .btnL:hover {
@@ -14,14 +13,9 @@
   cursor: pointer;
 }
 
-.aContaseñaInvitee:hover {
-  color: #9f9fed;
-  cursor: pointer;
-}
-
-.cardLoginInvitee {
+.cardLogin {
   width: 327px;
-  height: 180px;
+  height: 300px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: -webkit-box;
@@ -34,10 +28,10 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 40px 30px;
+  padding: 10px 30px;
 }
 
-.inputLoginInvitee {
+.inputLogin {
   width: 270px;
   height: 48px;
   border-radius: 8px;
@@ -47,7 +41,7 @@
   padding-left: 12px;
 }
 
-.contentLoginInvitee {
+.contentLogin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,54 +54,38 @@
           flex-direction: column;
 }
 
-.btnLI {
+.btnL {
   background-color: #736ced;
   color: white;
   border-radius: 8px;
   width: 327px;
   height: 48px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-box-shadow: rgba(175, 107, 107, 0.1) 0px 4px 12px;
+          box-shadow: rgba(175, 107, 107, 0.1) 0px 4px 12px;
   border: none;
   font-size: 16px;
   margin-top: 32px;
 }
 
-.btnLI:hover {
-  background-color: #9f9fed;
-  cursor: pointer;
-}
-
-.contetaContaseñaInvitee {
+.contetaContaseña {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   margin-top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-left: 60px;
 }
 
-.aContaseñaInvitee {
+.aContaseña {
   color: #736ced;
   font-size: 14px;
-  margin-top: 32px;
 }
 
-.upInputLoginInvitee {
+.upInputLogin {
   font-size: 12px;
   color: #3b4559;
   margin-bottom: 0;
 }
 
-.lineLoginInvitee {
+.lineLogin {
   height: 5px;
   margin-left: 0%;
   margin-right: 90%;
@@ -116,19 +94,28 @@
   border-radius: 5px;
 }
 
-.titleLoginInvitee {
+.titleLogin {
   color: #3b4559;
   margin-bottom: 5px;
   font-size: 24px;
   font-weight: bold;
 }
 
-.contImgLoginInviteeW {
+.contImgLoginW {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .contentLoginInvitee {
+  .contLogin {
+    margin-left: 220px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .contLogin {
+    margin-left: 40px;
+  }
+  .contentLogin {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -139,80 +126,74 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 40px;
   }
-  .contImgLoginInviteeW {
+  .contImgLoginW {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 10px;
+    margin-top: 5%;
   }
-  .imgLoginInviteeW {
+  .imgLoginW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
     -o-object-fit: cover;
        object-fit: cover;
+    margin-right: 30px;
   }
-  .containerLoginInvitee {
+  .containerLogin {
     height: 86vh;
-    margin-left: 30px;
+    margin-top: 5%;
   }
-  .containerLoginInviteeAndImg {
+  .containerLoginAndImg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    margin: 25px;
-    padding: 0;
-  }
-  .cardLoginInvitee {
-    padding: 32px, 16px;
-  }
-}
-
-@media only screen and (min-width: 820px) {
-  .containerLoginInvitee {
-    height: 86vh;
-    margin-left: 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .containerLoginInviteeAndImg {
-    margin-left: 70px;
-  }
-  .imgLoginInviteeW {
+  .imgLoginW {
     width: 600px;
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
+    margin-top: 0;
+    margin-right: 40px;
   }
-  .containerLoginInvitee {
-    margin-left: 40px;
+  .containerLogin {
+    margin-left: 10px;
     width: 300px;
+    margin-top: 0;
   }
-  .cardLoginInvitee {
+  .cardLogin {
     width: 510px;
-    height: 200px;
+    height: 460px;
   }
-  .upInputLoginInvitee {
+  .upInputLogin {
     margin-top: 25px;
   }
-  .inputLoginInvitee {
+  .inputLogin {
     width: 450px;
     height: 55px;
   }
-  .contetaContaseñaInvitee {
-    margin-left: 100px;
+  .contetaContaseña {
+    margin-left: 150px;
   }
   .btnL {
     margin-left: 90px;
   }
+  .containerLogin {
+    height: 75vh;
+  }
+  .containerLoginAndImg {
+    height: 800px;
+    margin-bottom: 30px;
+  }
 }
-/*# sourceMappingURL=loginInvitee.module.css.map */
+/*# sourceMappingURL=createInvitees.module.css.map */

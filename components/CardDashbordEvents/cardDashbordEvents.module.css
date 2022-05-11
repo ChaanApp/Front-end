@@ -9,14 +9,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
+  width: 100%;
+  height: 700px;
 }
 
 .btnLME {
@@ -126,6 +128,24 @@
   .contMyEventsinfo {
     width: 700px;
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .containerMyEventsAndImg {
+    height: 820px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .containerMyEventsAndImg {
+    height: 950px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .containerMyEventsAndImg {
+    height: 570px;
   }
 }
 /*# sourceMappingURL=cardDashbordEvents.module.css.map */

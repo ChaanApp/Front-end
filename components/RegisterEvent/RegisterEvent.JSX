@@ -18,12 +18,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function RegisterEvent(props) {
-  const { existingEvent } = props;
-
   const router = useRouter();
+  const { existingEvent } = props;
   const [dataEvent, setDataEvent] = useState(existingEvent);
-  console.log("Evento que viene del padre", existingEvent);
-  console.log("Estado del componente", dataEvent);
   const classes = useStyles();
 
   //setTimeout(function () {
@@ -31,6 +28,7 @@ export default function RegisterEvent(props) {
   //}, 1000);
 
   useEffect(() => {
+    console.log(existingEvent._id);
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
@@ -41,7 +39,7 @@ export default function RegisterEvent(props) {
     } else {
       setDataEvent(existingEvent);
     }
-  }, []);
+  }, [props.existingEvent]);
 
   function saveState(event) {
     setDataEvent({
@@ -55,10 +53,19 @@ export default function RegisterEvent(props) {
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
-    const url = `http://localhost:8080/events/${id}`;
+    const url = `http://localhost:8080/events/${existingEvent._id}`;
+    const editEvent = {
+      ...dataEvent,
+      eventLocation: {
+        adress: "dommi",
+        lat: "dommi",
+        long: "dommi",
+      },
+    };
+    console.log(editEvent);
     const options = {
-      method: "POST",
-      body: JSON.stringify(dataEvent),
+      method: "PUT",
+      body: JSON.stringify(editEvent),
       headers: {
         Authorization: token,
         "Content-Type": "application/json",
@@ -67,12 +74,9 @@ export default function RegisterEvent(props) {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log(response.data);
+        console.log(response);
       })
-      .catch((err) => {
-        console.log(err);
-        alert("No se creo el evento");
-      });
+      .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
 
   return (

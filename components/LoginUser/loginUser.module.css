@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .containerLogin {
-  height: 70vh;
+  height: 72vh;
 }
 
 .contLogin {
@@ -43,6 +43,7 @@
   border: none;
   background-color: #f7f7f7;
   margin-bottom: 12px;
+  padding-left: 12px;
 }
 
 .contentLogin {
@@ -128,6 +129,7 @@
     display: -ms-flexbox;
     display: flex;
     height: 10px;
+    margin-right: 30px;
   }
   .imgLoginW {
     margin-top: 65px;
@@ -149,10 +151,20 @@
   }
 }
 
+@media only screen and (min-width: 820px) {
+  .contImgLoginW {
+    margin-right: 30px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
+  .contImgLoginW {
+    margin-right: 50px;
+  }
   .imgLoginW {
     width: 600px;
     height: 500px;
+    margin-left: 40px;
     -o-object-fit: cover;
        object-fit: cover;
   }

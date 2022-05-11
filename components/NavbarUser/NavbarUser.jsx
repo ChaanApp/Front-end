@@ -26,7 +26,7 @@ export default function NavbarUser() {
           <Link href="/login-invitee">
             <a className={styles.ancorStylesTwo}>Soy invitado</a>
           </Link>
-          <Link href="/registerEvent/organizer">
+          <Link href="/register-event">
             <a className={styles.ancorStylesTwo}>Crear un evento</a>
           </Link>
           <div className={styles.contentancorMenuWThree}>

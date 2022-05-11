@@ -4,10 +4,11 @@
 .containerMyEventsAndImg {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-start;
   flex-direction: column;
   padding: 0;
   width: 100%;
+ height: 700px;
 }
 .btnLME {
   background-color: #736ced;
@@ -85,18 +86,20 @@
     width: 700px;
     margin-bottom: 30px;
   }
-  .containerMyEventsAndImg {
-    
-  }
 }
 
 @media only screen and (min-width: 768px) {
   .containerMyEventsAndImg {
-   
+    height: 820px;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .containerMyEventsAndImg {
+    height: 950px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .containerMyEventsAndImg {
-    
+    height: 570px;
   }
 }
