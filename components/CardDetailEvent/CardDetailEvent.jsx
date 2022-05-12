@@ -4,12 +4,13 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EventIcon from "@mui/icons-material/Event";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import BusinessIcon from "@mui/icons-material/Business";
+import Image from "next/image";
 
 
 export default function CardDetailEvent() {
   return (
     <div className={styles.containerDE}>
-      <div className={styles.containerimgTitleDescDE}>
+      <div className={styles.containerImgTitleDescDE}>
         <div className={styles.conticonDetEvtTitle}>
           <BusinessIcon className={styles.iconDetEvt} />
           <div className={styles.titleDE}>Detalles del evento</div>
@@ -44,10 +45,16 @@ export default function CardDetailEvent() {
         </p>
         <div className={styles.lineaH}></div>
       </div>
-      <div className={styles.containerimgTitleDescDE}>
+      <div className={styles.containerImgTitleDescDE}>
         <div className={styles.conticonDetEvtTitle}>
-          <img className={styles.iconDetEvt} src="/codev.png" alt="" />
-          <div className={styles.titleDE}> Código de vestimenta</div>
+          <Image
+            width={20}
+            height={20}
+            className={styles.iconDetEvt}
+            src="/codev.png"
+            alt=""
+          />
+          <div className={styles.titleDECV}> Código de vestimenta</div>
         </div>
         <p className={styles.textDE}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea enim
@@ -66,7 +73,12 @@ export default function CardDetailEvent() {
           voluptatibus eos et velit recusandae molestiae reprehenderit
           consequuntur veritatis libero quod?
         </p>
-        <img className={styles.mapsDetEvt} src="/maps.png" alt="" />
+        <div className={styles.mapsDetEvtXS}>
+          <Image width={505} height={250} src="/maps.png" alt="" />
+        </div>
+        <div className={styles.mapsDetEvtXL}>
+          <Image width={570} height={250} src="/maps.png" alt="" />
+        </div>
       </div>
     </div>
   );

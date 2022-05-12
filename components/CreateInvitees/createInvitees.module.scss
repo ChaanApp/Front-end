@@ -74,6 +74,9 @@
 .contimgLoginW {
   display: none;
 }
+.contImgLoginWMD {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
   .contLogin {
@@ -93,8 +96,14 @@
   }
   .contimgLoginW {
     display: flex;
-    height: 10px;
-    margin-top: 5%;
+    height: 470px;
+    width: 300px;
+    margin-top: 13%;
+    margin-right: 5%;
+    object-fit: cover;
+  }
+  .contImgLoginWMD {
+    display: none;
   }
   .imgLoginW {
     margin-top: 65px;
@@ -149,5 +158,11 @@
   .containerLoginAndimg {
     height: 800px;
     margin-bottom: 30px;
+  }
+  .contImgLoginW {
+    width: 500px;
+    height: 600px;
+    margin-top: 5%;
+    margin-right: 5%;
   }
 }
