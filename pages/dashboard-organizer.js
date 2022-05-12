@@ -49,6 +49,7 @@ export default function About() {
       getInfo();
       getEvents();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
