@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./navbarInvitee.module.scss";
 import ResponsiveDrawerInvitee from "../ResponsiveDrawerInvitee/ResponsiveDrawerInvitee";
+import Link from "next/link";
 
 export default function NavbarInvitee() {
   return (
@@ -19,9 +20,15 @@ export default function NavbarInvitee() {
           <p className={styles.textNav}>cha'an</p>
         </div>
         <div className={styles.contentancorMenuWTwo}>
-          <a className={styles.ancorStylesOne}> ¿Qué es cha'an?</a>
-          <a className={styles.ancorStylesTwo}>Soy invitado</a>
-          <a className={styles.ancorStylesTwo}>Crear un evento</a>
+          <Link href="/">
+            <a className={styles.ancorStylesOne}> ¿Qué es cha'an?</a>
+          </Link>
+          <Link href="/login-invitee">
+            <a className={styles.ancorStylesTwo}>Soy invitado</a>
+          </Link>
+          <Link href="/register-event">
+            <a className={styles.ancorStylesTwo}>Crear un evento</a>
+          </Link>
           <div className={styles.contentancorMenuWThree}>
             <a>Invitee</a>
           </div>

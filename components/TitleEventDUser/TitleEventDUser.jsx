@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./titleEventDUser.module.scss";
+import Link from "next/link";
 
 export default function TitleEventD() {
   return (
@@ -10,7 +11,9 @@ export default function TitleEventD() {
       </p>
       <div className={styles.contentbtnDE}>
         <button className={styles.btnDE}>Edit event</button>
-        <button className={styles.btnDEAI}>Agragar invitado</button>
+        <Link href="/create-invitees/6278780765edbe2bc40c67ee">
+          <button className={styles.btnDEAI}>Agragar invitado</button>
+        </Link>
         <a className={styles.ancorDE}>Delete event</a>
       </div>
     </div>

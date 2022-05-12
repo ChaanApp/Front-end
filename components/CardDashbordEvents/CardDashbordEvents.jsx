@@ -7,7 +7,6 @@ export default function CardDashbordEvents(props) {
   console.log(props);
   const events = props.events;
   return (
-    
     <div className={styles.containerMyEventsAndImg}>
       <div className={styles.containerMyEvents}>
         <div className={styles.contMyEvents}>
@@ -15,7 +14,9 @@ export default function CardDashbordEvents(props) {
             <h2 className={styles.titleMyEvents}>Mis eventos</h2>
             <div className={styles.lineMyEvents}></div>
           </div>
-          <button className={styles.btnLMEW}>Crear evento</button>
+          <Link href="/register-event">
+            <button className={styles.btnLMEW}>Crear evento</button>
+          </Link>
         </div>
 
         {events.map((event, i) => {
@@ -23,14 +24,18 @@ export default function CardDashbordEvents(props) {
             <>
               <div className={styles.contMyEventsinfo}>
                 <div className={styles.titleEvnt}>
-                  <h3>
-                    {i + 1}-{event.eventName}
-                  </h3>
+                  <Link href={`/detail-event-user/${event._id} `}>
+                    <h3>
+                      {i + 1}-{event.eventName}
+                    </h3>
+                  </Link>
                 </div>
                 <div>
-                  <a className={styles.ancorTitleEvnt} href="">
-                    Editar
-                  </a>
+                  <Link href={`/register-event/${event._id} `}>
+                    <a className={styles.ancorTitleEvnt} href="">
+                      Editar
+                    </a>
+                  </Link>
                 </div>
               </div>
             </>

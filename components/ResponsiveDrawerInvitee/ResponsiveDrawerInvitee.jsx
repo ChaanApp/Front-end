@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Drawer from "@mui/material/Drawer";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import Link from "next/link";
 
 const drawerWidth = 281;
 
