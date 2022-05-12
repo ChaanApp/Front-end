@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./cardAnfInv.module.scss";
 import Link from "next/link";
-import Image from "next/image";
+
 
 export default function CardAnfInv() {
   return (
@@ -9,7 +9,7 @@ export default function CardAnfInv() {
       <Link href="/login-user">
         <a>
           <div className={styles.overFow}>
-            <Image className={styles.ImageAnf} Image="/Anfi2.jpg" alt="" />
+            <img className={styles.imgAnf} src="/Anfi2.jpg" alt="" />
           </div>
           <p className={styles.textCArd}>Soy anfitrión</p>
         </a>
@@ -17,7 +17,7 @@ export default function CardAnfInv() {
       <Link href="/login-invitee">
         <a>
           <div className={styles.overFow}>
-            <Image className={styles.ImageInv} Image="/Inv.jpg" alt="" />
+            <img className={styles.imgInv} src="/Inv.jpg" alt="" />
           </div>
           <p className={styles.textCArd}>Soy invitado</p>
         </a>

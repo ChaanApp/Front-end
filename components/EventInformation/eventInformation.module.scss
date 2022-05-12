@@ -70,7 +70,7 @@
   font-size: 24px;
   font-weight: bold;
 }
-.contImageLoginW {
+.contimgLoginW {
   display: none;
 }
 
@@ -81,11 +81,11 @@
     flex-direction: column;
     margin-left: 40px;
   }
-  .contImageLoginW {
+  .contimgLoginW {
     display: flex;
     height: 10px;
   }
-  .ImageLoginW {
+  .imgLoginW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
@@ -94,7 +94,7 @@
   .containerLogin {
     height: 80vh;
   }
-  .containerLoginAndImage {
+  .containerLoginAndimg {
     display: flex;
     justify-content: space-between;
     height: 900px;
@@ -102,7 +102,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .ImageLoginW {
+  .imgLoginW {
     width: 600px;
     height: 500px;
     object-fit: cover;

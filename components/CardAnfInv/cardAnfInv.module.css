@@ -9,7 +9,7 @@
   margin-top: 70px;
 }
 
-.ImageAnf {
+.imgAnf {
   width: 156px;
   height: 150px;
   border-radius: 16px;
@@ -23,7 +23,7 @@
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.ImageAnf:hover {
+.imgAnf:hover {
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
 }
@@ -33,7 +33,7 @@
   border-radius: 16px;
 }
 
-.ImageInv {
+.imgInv {
   width: 156px;
   height: 150px;
   border-radius: 16px;
@@ -47,7 +47,7 @@
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.ImageInv:hover {
+.imgInv:hover {
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
 }
@@ -62,12 +62,12 @@
   .ContainerCardsAnfInv {
     margin-top: 200px;
   }
-  .ImageAnf {
+  .imgAnf {
     width: 262px;
     height: 150px;
     border-radius: 16px;
   }
-  .ImageInv {
+  .imgInv {
     width: 262px;
     height: 150px;
     border-radius: 16px;
@@ -88,12 +88,12 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .ImageAnf {
+  .imgAnf {
     width: 362px;
     height: 200px;
     border-radius: 16px;
   }
-  .ImageInv {
+  .imgInv {
     width: 362px;
     height: 200px;
     border-radius: 16px;

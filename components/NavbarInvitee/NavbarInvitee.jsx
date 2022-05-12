@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./navbarInvitee.module.scss";
 import ResponsiveDrawerInvitee from "../ResponsiveDrawerInvitee/ResponsiveDrawerInvitee";
 import Link from "next/link";
-import Image from "next/image";
+
 
 export default function NavbarInvitee() {
   return (
@@ -13,7 +13,7 @@ export default function NavbarInvitee() {
         </div>
         <p className={styles.textNav}>cha'an</p>
         <div className={styles.containerLogo}>
-          <Image className={styles.iconLogo} Image="/chaanApp.png" alt="" />
+          <img className={styles.iconLogo} src="/chaanApp.png" alt="" />
         </div>
       </div>
       <div className={styles.NavScssW}>
@@ -34,7 +34,7 @@ export default function NavbarInvitee() {
             <a>Invitee</a>
           </div>
 
-          <Image className={styles.iconLogo} Image="/chaanApp.png" alt="" />
+          <img className={styles.iconLogo} src="/chaanApp.png" alt="" />
         </div>
       </div>
     </div>

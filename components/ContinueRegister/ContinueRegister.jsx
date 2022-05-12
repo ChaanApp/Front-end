@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./continueRegister.module.scss";
-import Image from "next/image";
+
 
 export default function ContinueRegister() {
   return (
-    <div className={styles.containerLoginAndImage}>
+    <div className={styles.containerLoginAndimg}>
       <div className={styles.containerLogin}>
         <div className={styles.contLogin}>
           <h2 className={styles.titleLogin}>Continue your Register</h2>
@@ -56,8 +56,8 @@ export default function ContinueRegister() {
           <button className={styles.btnL}>Finish your register</button>
         </div>
       </div>
-      <div className={styles.contImageLoginW}>
-        <Image className={styles.ImageLoginW} Image="/registro.jpg" alt="" />
+      <div className={styles.contimgLoginW}>
+        <img className={styles.imgLoginW} src="/registro.jpg" alt="" />
       </div>
     </div>
   );

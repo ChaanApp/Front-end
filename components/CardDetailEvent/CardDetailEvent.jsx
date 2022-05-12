@@ -4,12 +4,12 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EventIcon from "@mui/icons-material/Event";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import BusinessIcon from "@mui/icons-material/Business";
-import Image from "next/image";
+
 
 export default function CardDetailEvent() {
   return (
     <div className={styles.containerDE}>
-      <div className={styles.containerImageTitleDescDE}>
+      <div className={styles.containerimgTitleDescDE}>
         <div className={styles.conticonDetEvtTitle}>
           <BusinessIcon className={styles.iconDetEvt} />
           <div className={styles.titleDE}>Detalles del evento</div>
@@ -44,9 +44,9 @@ export default function CardDetailEvent() {
         </p>
         <div className={styles.lineaH}></div>
       </div>
-      <div className={styles.containerImageTitleDescDE}>
+      <div className={styles.containerimgTitleDescDE}>
         <div className={styles.conticonDetEvtTitle}>
-          <Image className={styles.iconDetEvt} Image="/codev.png" alt="" />
+          <img className={styles.iconDetEvt} src="/codev.png" alt="" />
           <div className={styles.titleDE}> Código de vestimenta</div>
         </div>
         <p className={styles.textDE}>
@@ -66,7 +66,7 @@ export default function CardDetailEvent() {
           voluptatibus eos et velit recusandae molestiae reprehenderit
           consequuntur veritatis libero quod?
         </p>
-        <Image className={styles.mapsDetEvt} Image="/maps.png" alt="" />
+        <img className={styles.mapsDetEvt} src="/maps.png" alt="" />
       </div>
     </div>
   );

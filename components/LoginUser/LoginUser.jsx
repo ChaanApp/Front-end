@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./loginUser.module.scss";
 import { useRouter } from "next/router";
-import Image from "next/image";
+
 
 const initialState = {
   email: "",
@@ -56,7 +56,7 @@ export default function LoginUser() {
   }
 
   return (
-    <div className={styles.containerLoginAndImage}>
+    <div className={styles.containerLoginAndimg}>
       <div className={styles.containerLogin}>
         <div className={styles.contLogin}>
           <h2 className={styles.titleLogin}>Login</h2>
@@ -95,8 +95,8 @@ export default function LoginUser() {
           </button>
         </div>
       </div>
-      <div className={styles.contImageLoginW}>
-        <Image className={styles.ImageLoginW} Image="/picLogW.jpg" alt="" />
+      <div className={styles.contimgLoginW}>
+        <img className={styles.imgLoginW} src="/picLogW.jpg" alt="" />
       </div>
     </div>
   );

@@ -198,7 +198,7 @@
   font-weight: bold;
 }
 
-.contImageLoginW {
+.contimgLoginW {
   display: none;
 }
 
@@ -231,13 +231,13 @@
   .containerFormReg {
     height: 79vh;
   }
-  .contImageLoginW {
+  .contimgLoginW {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 10px;
   }
-  .ImageLoginW {
+  .imgLoginW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
@@ -247,7 +247,7 @@
   .containerLogin {
     height: 80vh;
   }
-  .containerLoginAndImage {
+  .containerLoginAndimg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

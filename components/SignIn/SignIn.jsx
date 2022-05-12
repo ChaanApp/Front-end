@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./signIn.module.scss";
 import { useRouter } from "next/router";
-import Image from "next/image";
+
 
 const initialState = {
   name: "",
@@ -53,7 +53,7 @@ export default function SignUser() {
   //onChange={saveState}
   //        value={dataSignIn.name}
   return (
-    <div className={styles.containerLoginAndImage}>
+    <div className={styles.containerLoginAndimg}>
       <div className={styles.containerLogin}>
         <div className={styles.contLogin}>
           <h2 className={styles.titleLogin}>Sign in</h2>
@@ -111,8 +111,8 @@ export default function SignUser() {
           </button>
         </div>
       </div>
-      <div className={styles.contImageLoginW}>
-        <Image className={styles.ImageLoginW} Image="/singinuser.jpg" alt="" />
+      <div className={styles.contimgLoginW}>
+        <img className={styles.imgLoginW} src="/singinuser.jpg" alt="" />
       </div>
     </div>
   );

@@ -101,7 +101,7 @@
   font-weight: bold;
 }
 
-.contImageLoginW {
+.contimgLoginW {
   display: none;
 }
 
@@ -119,14 +119,14 @@
     flex-direction: column;
     margin-left: 40px;
   }
-  .contImageLoginW {
+  .contimgLoginW {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 10px;
     margin-top: 5%;
   }
-  .ImageLoginW {
+  .imgLoginW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
@@ -137,7 +137,7 @@
     height: 86vh;
     margin-top: 5%;
   }
-  .containerLoginAndImage {
+  .containerLoginAndimg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -148,7 +148,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .ImageLoginW {
+  .imgLoginW {
     width: 600px;
     height: 500px;
     -o-object-fit: cover;
@@ -180,7 +180,7 @@
   .containerLogin {
     height: 75vh;
   }
-  .containerLoginAndImage {
+  .containerLoginAndimg {
     height: 800px;
     margin-bottom: 30px;
   }

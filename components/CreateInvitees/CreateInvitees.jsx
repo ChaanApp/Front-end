@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./createInvitees.module.scss";
 import { useRouter } from "next/router";
-import Image from "next/image";
+
 
 const initialStateInvitado = {
   nameInvitee: "",
@@ -113,7 +113,7 @@ export default function createInvitees(props) {
       .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
   return (
-    <div className={styles.containerLoginAndImage}>
+    <div className={styles.containerLoginAndimg}>
       <div className={styles.containerLogin}>
         <div className={styles.contLogin}>
           <h2 className={styles.titleLogin}>Agrega a tus Invitados</h2>
@@ -160,8 +160,8 @@ export default function createInvitees(props) {
           </button>
         </div>
       </div>
-      <div className={styles.contImageLoginW}>
-        <Image className={styles.ImageLoginW} Image="/inviteeAdd.jpg" alt="" />
+      <div className={styles.contimgLoginW}>
+        <img className={styles.imgLoginW} src="/inviteeAdd.jpg" alt="" />
       </div>
     </div>
   );

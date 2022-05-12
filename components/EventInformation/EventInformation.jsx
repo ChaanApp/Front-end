@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./eventinformation.module.scss";
-import Image from "next/image";
+
 
 export default function EventInformation() {
   return (
-    <div className={styles.containerLoginAndImage}>
+    <div className={styles.containerLoginAndimg}>
       <div className={styles.containerLogin}>
         <div className={styles.contLogin}>
           <h2 className={styles.titleLogin}>Information for your Event</h2>
@@ -56,8 +56,8 @@ export default function EventInformation() {
           <button className={styles.btnL}>Finish your register</button>
         </div>
       </div>
-      <div className={styles.contImageLoginW}>
-        <Image className={styles.ImageLoginW} Image="/picLogW.jpg" alt="" />
+      <div className={styles.contimgLoginW}>
+        <img className={styles.imgLoginW} src="/picLogW.jpg" alt="" />
       </div>
     </div>
   );
