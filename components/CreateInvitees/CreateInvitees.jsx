@@ -43,7 +43,7 @@ export default function createInvitees(props) {
     } else if (idEvento.length > 0) {
       setToken(tokenS);
       async function getEvent() {
-        const url = `http://localhost:8080/events/${idEvento}`;
+        const url = ` http://api.chaan.site/events/${idEvento}`;
         const event = await fetch(url, {
           method: "GET",
           headers: {
@@ -70,7 +70,7 @@ export default function createInvitees(props) {
     });
   }
   async function addInviteeToEnvet(newEvent) {
-    const url = `http://localhost:8080/events/${idEvento}`;
+    const url = ` http://api.chaan.site/events/${idEvento}`;
     const options = {
       method: "PUT",
       body: JSON.stringify(newEvent),
@@ -89,7 +89,7 @@ export default function createInvitees(props) {
 
   async function createInvitee(event) {
     event.preventDefault();
-    const url = `http://localhost:8080/events/${idEvento}/invitees `;
+    const url = ` http://api.chaan.site/events/${idEvento}/invitees `;
     const options = {
       method: "POST",
       body: JSON.stringify(dataCreateInvitee),

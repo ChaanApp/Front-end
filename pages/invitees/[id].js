@@ -19,7 +19,7 @@ export default function About() {
       router.push("/login-user");
     } else {
       async function getEvent() {
-        const url = `http://localhost:8080/events/${router.query.id}`;
+        const url = ` http://api.chaan.site/events/${router.query.id}`;
         const event = await fetch(url, {
           method: "GET",
           headers: {

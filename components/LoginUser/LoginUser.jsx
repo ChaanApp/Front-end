@@ -23,7 +23,7 @@ export default function LoginUser() {
 
   async function login(event) {
     event.preventDefault();
-    const url = "http://localhost:8080/organizer/login";
+    const url = " http://api.chaan.site/organizer/login";
     const options = {
       method: "POST",
       body: JSON.stringify(dataLogin),
