@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./signIn.module.scss";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const initialState = {
   name: "",
@@ -12,7 +13,8 @@ const initialState = {
   telephone: "0000000000",
 };
 
-export default function SignUser() { //props
+export default function SignUser() {
+  //props
   const router = useRouter();
 
   const [dataSignIn, setDataSignIn] = useState(initialState); //cambiar NOM Invite
@@ -24,7 +26,8 @@ export default function SignUser() { //props
     });
   }
 
-  async function createUser(event) { //cambiar nom
+  async function createUser(event) {
+    //cambiar nom
     event.preventDefault();
     const url = "https://api.chaan.site/organizer/signup"; //urlposman $id
     const options = {
@@ -46,9 +49,9 @@ export default function SignUser() { //props
       })
       .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
-//agregar en cada imput el name y valiu  name="name"
-      //onChange={saveState}
-        //        value={dataSignIn.name}
+  //agregar en cada imput el name y valiu  name="name"
+  //onChange={saveState}
+  //        value={dataSignIn.name}
   return (
     <div className={styles.containerLoginAndImg}>
       <div className={styles.containerLogin}>
@@ -109,7 +112,13 @@ export default function SignUser() { //props
         </div>
       </div>
       <div className={styles.contImgLoginW}>
-        <img className={styles.imgLoginW} src="/singinuser.jpg" alt="" />
+        <Image
+          width={50}
+          height={50}
+          className={styles.imgLoginW}
+          src="/singinuser.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

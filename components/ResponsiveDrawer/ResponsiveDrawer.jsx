@@ -5,6 +5,7 @@ import AppBar from "@mui/material/AppBar";
 import Drawer from "@mui/material/Drawer";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import Link from "next/link";
+import Image from "next/image";
 
 const drawerWidth = 281;
 
@@ -61,7 +62,9 @@ function ResponsiveDrawer(props) {
   return (
     <div className={styles.contenticonMenu}>
       <AppBar className={styles.appBarStyles}>
-        <img
+        <Image
+        width={500}
+        height={500}
           className={styles.iconMenu}
           src="/menu.png"
           alt=""

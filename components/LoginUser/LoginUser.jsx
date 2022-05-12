@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./loginUser.module.scss";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const initialState = {
   email: "",
@@ -95,7 +96,22 @@ export default function LoginUser() {
         </div>
       </div>
       <div className={styles.contImgLoginW}>
-        <img className={styles.imgLoginW} src="/picLogW.jpg" alt="" />
+        <Image
+          width={500}
+          height={500}
+          className={styles.imgLoginW}
+          src="/picLogW.jpg"
+          alt=""
+        />
+      </div>
+      <div className={styles.contImgLoginWMD}>
+        <Image
+          width={500}
+          height={680}
+          className={styles.imgLoginW}
+          src="/picLogW.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

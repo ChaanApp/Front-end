@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./loginInvitee.module.scss";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function LoginInvitee() {
   return (
@@ -23,13 +24,19 @@ export default function LoginInvitee() {
             </div>
           </div>
           <div className={styles.contetaContaseñaInvitee}>
-              <button className={styles.btnLI}>Entar como invitado</button>
-              <a className={styles.aContaseñaInvitee}>Forgot my password</a>
-            </div>
+            <button className={styles.btnLI}>Entar como invitado</button>
+            <a className={styles.aContaseñaInvitee}>Forgot my password</a>
+          </div>
         </div>
       </div>
       <div className={styles.contImgLoginInviteeW}>
-        <img className={styles.imgLoginInviteeW} src="/invitte.jpg" alt="" />
+        <Image
+          width={500}
+          height={500}
+          className={styles.imgLoginInviteeW}
+          src="/invitte.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

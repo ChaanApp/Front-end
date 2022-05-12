@@ -18,6 +18,9 @@
   font-weight: bold;
   text-align: center;
 }
+.titleDECV {
+  margin-left: 35px;
+}
 
 .textDE {
   font-size: 16px;
@@ -32,10 +35,16 @@
   width: 100%;
   height: 40%;
 }
-.mapsDetEvt {
+.mapsDetEvtXS {
   width: 88%;
   margin-bottom: 24px;
   margin-left: 20px;
+}
+.mapsDetEvtXL {
+  display: none;
+}
+.mapsDetEvtMD {
+  display: none;
 }
 @media only screen and (min-width: 768px) {
   .containerDE {
@@ -49,6 +58,12 @@
   .textDE {
     padding-right: 55px;
   }
+  .mapsDetEvtXS {
+    display: none;
+  }
+  .mapsDetEvtMD {
+    display: flex;
+  }
 }
 @media only screen and (min-width: 820px) {
   .containerDE {
@@ -56,6 +71,10 @@
     justify-content: center;
     height: 55vh;
     padding-left: 5%;
+  }
+  .mapsDetEvtMD {
+    width: 365px;
+    height: 180px;
   }
   .containerImgTitleDescDE {
     width: 90%;
@@ -72,5 +91,15 @@
   }
   .containerImgTitleDescDE {
     width: 100%;
+  }
+  .mapsDetEvtXS {
+    display: none;
+  }
+  .mapsDetEvtMD {
+    display: none;
+  }
+  .mapsDetEvtXL {
+    display: flex;
+    padding-left: 20px;
   }
 }

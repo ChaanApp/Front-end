@@ -74,21 +74,20 @@
 .contImgLoginW {
   display: none;
 }
-
+.contImgLoginWMD {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
-.contLogin{
+  .contLogin {
     margin-left: 220px;
+  }
 }
-
-}
-
-
 
 @media only screen and (min-width: 820px) {
-    .contLogin{
-        margin-left: 40px;
-    }
+  .contLogin {
+    margin-left: 40px;
+  }
   .contentLogin {
     display: flex;
     align-items: flex-start;
@@ -97,8 +96,14 @@
   }
   .contImgLoginW {
     display: flex;
-    height: 10px;
-    margin-top: 5%;
+    height: 470px;
+    width: 300px;
+    margin-top: 13%;
+    margin-right: 5%;
+    object-fit: cover;
+  }
+  .contImgLoginWMD {
+    display: none;
   }
   .imgLoginW {
     margin-top: 65px;
@@ -153,5 +158,11 @@
   .containerLoginAndImg {
     height: 800px;
     margin-bottom: 30px;
+  }
+  .contImgLoginW {
+    width: 500px;
+    height: 600px;
+    margin-top: 5%;
+    margin-right: 5%;
   }
 }

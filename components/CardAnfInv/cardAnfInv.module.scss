@@ -16,9 +16,15 @@
 .imgAnf:hover {
   transform: scale(1.8);
 }
-.overFow {
+.overFowXS {
   overflow: hidden;
   border-radius: 16px;
+}
+.overFowMD {
+  display: none;
+}
+.overFowXL {
+  display: none;
 }
 
 .imgInv {
@@ -34,7 +40,6 @@
   transform: scale(1.8);
 }
 
-
 .textCArd {
   font-size: 16px;
   color: #3b4559;
@@ -48,6 +53,12 @@
     width: 262px;
     height: 150px;
     border-radius: 16px;
+  }
+  .overFowXS {
+    display: none;
+  }
+  .overFowMD {
+    display: flex;
   }
 
   .imgInv {
@@ -66,7 +77,6 @@
   .ContainerCardsAnfInv {
     margin-top: 0px;
   }
-
 }
 
 @media only screen and (min-width: 1280px) {
@@ -75,7 +85,12 @@
     height: 200px;
     border-radius: 16px;
   }
-
+  .overFowXL {
+    display: flex;
+  }
+  .overFowMD {
+    display: none;
+  }
   .imgInv {
     width: 362px;
     height: 200px;

@@ -1,6 +1,9 @@
 .containerLogin {
   height: 72vh;
 }
+.contImgLoginWMD {
+  display: none;
+}
 .contLogin {
   margin-top: 25%;
   margin-left: 38px;
@@ -80,6 +83,14 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .contImgLoginWMD {
+    margin-top: 12%;
+    width: 300px;
+    height: 500px;
+    margin-right: 3%;
+    display: flex;
+  }
+
   .contentLogin {
     display: flex;
     align-items: flex-start;
@@ -88,8 +99,10 @@
   }
   .contImgLoginW {
     display: flex;
-    height: 10px;
+    height: 500px;
+    margin-top: 5%;
     margin-right: 30px;
+    display: none;
   }
   .imgLoginW {
     margin-top: 65px;
@@ -111,8 +124,12 @@
   }
 }
 @media only screen and (min-width: 1280px) {
+  .contImgLoginWMD {
+    display: none;
+  }
   .contImgLoginW {
     margin-right: 50px;
+    display: flex;
   }
   .imgLoginW {
     width: 600px;
@@ -140,5 +157,8 @@
   }
   .btnL {
     margin-left: 90px;
+  }
+  .containerLogin {
+    width: 38vh;
   }
 }
