@@ -1,21 +1,21 @@
-.contImgMyEventsW {
+.contImageMyEventsW {
   display: none;
 }
 
-.containerMyEventsAndImg {
+.containerMyEventsAndImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 0;
   width: 100%;
   height: 700px;
@@ -28,7 +28,7 @@
   width: 364px;
   height: 48px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: none;
   font-size: 16px;
   margin-top: 32px;
@@ -42,7 +42,7 @@
   width: 364px;
   height: 48px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: none;
   font-size: 16px;
   margin-top: 32px;
@@ -63,20 +63,20 @@
   width: 364px;
   height: 68px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 12px;
   margin-top: 24px;
 }
@@ -89,7 +89,7 @@
 
 .ancorTitleEvnt {
   -webkit-text-decoration: underline #736ced;
-          text-decoration: underline #736ced;
+  text-decoration: underline #736ced;
   color: #736ced;
   font-size: 16px;
 }
@@ -97,15 +97,15 @@
 @media only screen and (min-width: 768px) {
   .btnLMEW {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .btnLME {
     display: none;
@@ -115,12 +115,12 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .lineMyEvents {
     width: 50px;
@@ -132,19 +132,19 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .containerMyEventsAndImg {
+  .containerMyEventsAndImage {
     height: 820px;
   }
 }
 
 @media only screen and (min-width: 820px) {
-  .containerMyEventsAndImg {
+  .containerMyEventsAndImage {
     height: 950px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .containerMyEventsAndImg {
+  .containerMyEventsAndImage {
     height: 570px;
   }
 }

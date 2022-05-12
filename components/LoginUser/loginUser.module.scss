@@ -75,7 +75,7 @@
   font-size: 24px;
   font-weight: bold;
 }
-.contImgLoginW {
+.contImageLoginW {
   display: none;
 }
 
@@ -86,12 +86,12 @@
     flex-direction: column;
     margin-left: 40px;
   }
-  .contImgLoginW {
+  .contImageLoginW {
     display: flex;
     height: 10px;
     margin-right: 30px;
   }
-  .imgLoginW {
+  .ImageLoginW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
@@ -100,21 +100,21 @@
   .containerLogin {
     height: 80vh;
   }
-  .containerLoginAndImg {
+  .containerLoginAndImage {
     display: flex;
     justify-content: space-between;
   }
 }
 @media only screen and (min-width: 820px) {
-  .contImgLoginW {
+  .contImageLoginW {
     margin-right: 30px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .contImgLoginW {
+  .contImageLoginW {
     margin-right: 50px;
   }
-  .imgLoginW {
+  .ImageLoginW {
     width: 600px;
     height: 500px;
     margin-left: 40px;
