@@ -3,7 +3,6 @@ import styles from "./loginUser.module.scss";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-
 const initialState = {
   email: "",
   password: "",
@@ -96,19 +95,10 @@ export default function LoginUser() {
           </button>
         </div>
       </div>
-      <div className={styles.contImgLoginW}>
-        <Image
-          width={500}
-          height={500}
-          className={styles.imgLoginW}
-          src="/picLogW.jpg"
-          alt=""
-        />
-      </div>
       <div className={styles.contImgLoginWMD}>
         <Image
           width={500}
-          height={680}
+          height={500}
           className={styles.imgLoginW}
           src="/picLogW.jpg"
           alt=""

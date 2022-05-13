@@ -110,8 +110,8 @@ export default function SignUser() {
       </div>
       <div className={styles.contImgLoginW}>
         <Image
-          width={50}
-          height={50}
+          width={300}
+          height={550}
           className={styles.imgLoginW}
           src="/singinuser.jpg"
           alt=""

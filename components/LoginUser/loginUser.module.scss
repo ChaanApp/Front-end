@@ -106,8 +106,8 @@
   }
   .imgLoginW {
     margin-top: 65px;
-    width: 350px;
-    height: 535px;
+    width: 550px;
+    height: 735px;
     object-fit: cover;
   }
   .containerLogin {
@@ -115,7 +115,7 @@
   }
   .containerLoginAndimg {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media only screen and (min-width: 820px) {
@@ -125,21 +125,23 @@
 }
 @media only screen and (min-width: 1280px) {
   .contImgLoginWMD {
-    display: none;
-  }
-  .contImgLoginW {
-    margin-right: 50px;
-    display: flex;
-  }
-  .imgLoginW {
-    width: 600px;
+    margin-right: 0px;
+
+    width: 50%;
     height: 500px;
+  }
+
+  .imgLoginW {
+    width: 300px;
+    height: 400px;
     margin-left: 40px;
     object-fit: cover;
   }
   .containerLogin {
-    margin-left: 10px;
-    width: 300px;
+    align-items: center;
+    width: 100vh;
+   margin-bottom: 200px;
+    
   }
   .cardLogin {
     width: 510px;
@@ -157,8 +159,5 @@
   }
   .btnL {
     margin-left: 90px;
-  }
-  .containerLogin {
-    width: 38vh;
   }
 }

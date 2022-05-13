@@ -9,6 +9,9 @@
   background-color: #9f9fed;
   cursor: pointer;
 }
+.contImgLoginW {
+  display: none;
+}
 .cardLogin {
   width: 327px;
   height: 390px;
@@ -75,46 +78,44 @@
   display: none;
 }
 
-@media only screen and (min-width: 820px) {
-  .contentLogin {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left: 40px;
-  }
-  .contimgLoginW {
-    display: flex;
-    height: 10px;
-    margin-top: 5%;
-  }
-  .imgLoginW {
-    margin-top: 65px;
-    width: 350px;
-    height: 535px;
-    object-fit: cover;
-  }
-  .containerLogin {
-    height: 86vh;
-    margin-top: 5%;
-  }
+@media only screen and (min-width: 768px) {
   .containerLoginAndimg {
     display: flex;
-    justify-content: space-between;
+    align-items: end;
+    height: 108vw;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .containerLogin {
+    height: 75vh;
+    margin-top: 60px;
+  }
+  .contImgLoginW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgLoginW {
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .containerLoginAndimg {
+    height: 120vw;
+  }
+  .imgLoginW {
+    padding-bottom: 300px;
+  }
+  .contImgLoginW {
+    padding-bottom: 180px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .imgLoginW {
-    width: 600px;
-    height: 500px;
-    object-fit: cover;
-    margin-top: 0;
-  }
-  .containerLogin {
-    margin-left: 10px;
-    width: 300px;
-    margin-top: 0;
-  }
   .cardLogin {
     width: 510px;
     height: 460px;
@@ -122,21 +123,21 @@
   .upInputLogin {
     margin-top: 25px;
   }
+  .containerLogin {
+    margin: 0;
+  }
+  .contLogin {
+    margin: 0;
+  }
   .inputLogin {
     width: 450px;
     height: 55px;
   }
-  .contetaContaseña {
-    margin-left: 150px;
-  }
-  .btnL {
-    margin-left: 90px;
-  }
-  .containerLogin {
-    height: 75vh;
-  }
+
   .containerLoginAndimg {
-    height: 800px;
-    margin-bottom: 30px;
+    height: 120vh;
+  }
+  .contImgLoginW {
+    padding-bottom: 0px;
   }
 }
