@@ -29,7 +29,7 @@ export default function SignUser() {
   async function createUser(event) {
     //cambiar nom
     event.preventDefault();
-    const url = "https://api.chaan.site/organizer/signup"; //urlposman $id
+    const url = "http://api.chaan.site/organizer/signup"; //urlposman $id
     const options = {
       method: "POST",
       body: JSON.stringify(dataSignIn),
