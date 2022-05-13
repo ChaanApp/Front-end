@@ -43,7 +43,7 @@ export default function About() {
         })
           .then((res) => res.json())
           .then((data) => {
-           // console.log(data.success ? data.data.events : data.data.message);
+            // console.log(data.success ? data.data.events : data.data.message);
             return data.success ? data.data.events : initialState;
           })
           .catch((err) => console.log("Hubo un error en la peticion", err));

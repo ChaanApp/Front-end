@@ -53,9 +53,9 @@ export default function MyInvitees(props) {
   return (
     <div className={styles.maincontainer}>
       <div className={styles.miniheader}>
-        <h3>My Events</h3>
+        <h3>Mis Invitados</h3>
         <p>|</p>
-        <h3>PROPS PAPU</h3>
+        <h3> Ko’ox man káalkunaj baa –</h3>
       </div>
       <div className={styles.miniheader}>
         <h4>Data</h4>

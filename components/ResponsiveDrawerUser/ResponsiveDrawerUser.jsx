@@ -56,9 +56,11 @@ function ResponsiveDrawer(props) {
     <div className={styles.ContainerAMenuM}>
       <h2 className={styles.TitleMenuDot}> cha&#39;an</h2>
       <div className={styles.ContainerAMenuM}>
-        <a className={styles.aOneMenuM} href="">
-          Hola&#39; {dataUser.name}
-        </a>
+        <Link href="/dashboard-organizer">
+          <StyledLink className={styles.aOneMenuM} href="">
+            Hola&#39; {dataUser.name}
+          </StyledLink>
+        </Link>
         <Link href="/">
           <StyledLink className={styles.aMenuM} href="">
             ¿Qué es cha&#39;an?

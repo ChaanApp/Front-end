@@ -45,7 +45,7 @@ function ResponsiveDrawer(props) {
             Soy invitado
           </StyledLink>
         </Link>
-        <Link href="/register-event">
+        <Link href="/login-user">
           <StyledLink className={styles.aTwoMenuM} href="">
             Crear un evento
           </StyledLink>

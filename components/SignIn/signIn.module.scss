@@ -85,6 +85,7 @@
     height: 108vw;
     width: 100%;
     align-items: center;
+    margin-bottom: 46px;
     justify-content: space-around;
   }
   .containerLogin {
@@ -95,6 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 300px;
   }
   .imgLoginW {
     object-fit: cover;
@@ -135,9 +137,11 @@
   }
 
   .containerLoginAndimg {
-    height: 120vh;
+    height: 83vh;
+    margin-bottom: 42px;
   }
   .contImgLoginW {
     padding-bottom: 0px;
+    width: 300px;
   }
 }

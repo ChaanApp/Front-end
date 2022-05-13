@@ -5,9 +5,8 @@ import AppBar from "@mui/material/AppBar";
 import Drawer from "@mui/material/Drawer";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import Link from "next/link";
-import Image from 'next/image'
+import Image from "next/image";
 import styled from "styled-components";
-
 
 const drawerWidth = 281;
 const StyledLink = styled.a`
@@ -26,9 +25,11 @@ function ResponsiveDrawer(props) {
     <div className={styles.ContainerAMenuM}>
       <h2 className={styles.TitleMenuDot}> cha&#39;an</h2>
       <div className={styles.ContainerAMenuM}>
-        <a className={styles.aOneMenuM} href="">
-          Login
-        </a>
+        <Link href="/login-user">
+          <StyledLink className={styles.aOneMenuM} href="">
+            Login
+          </StyledLink>
+        </Link>
         <Link href="/">
           <StyledLink className={styles.aMenuM} href="">
             ¿Qué es cha&#39;an?
@@ -39,7 +40,7 @@ function ResponsiveDrawer(props) {
             Soy invitado
           </StyledLink>
         </Link>
-        <Link href="/register-event">
+        <Link href="/login-user">
           <StyledLink className={styles.aTwoMenuM} href="">
             Crear un evento
           </StyledLink>
@@ -61,8 +62,8 @@ function ResponsiveDrawer(props) {
     <div className={styles.contenticonMenu}>
       <AppBar className={styles.appBarStyles}>
         <Image
-        width={50}
-        height={50}
+          width={50}
+          height={50}
           className={styles.iconMenu}
           src="/menu.png"
           alt=""

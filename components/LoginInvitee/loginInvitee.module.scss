@@ -145,6 +145,10 @@
 @media only screen and (min-width: 1280px) {
   .containerLoginInviteeAndimg {
     margin-left: 70px;
+    justify-content: flex-end;
+  }
+  .contImgLoginInviteeLI {
+    width: 400px;
   }
   .imgLoginInviteeW {
     width: 300px;

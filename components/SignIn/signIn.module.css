@@ -122,6 +122,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 46px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -139,6 +140,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 300px;
   }
   .imgLoginW {
     -o-object-fit: cover;
@@ -183,10 +185,12 @@
     height: 55px;
   }
   .containerLoginAndimg {
-    height: 120vh;
+    height: 83vh;
+    margin-bottom: 42px;
   }
   .contImgLoginW {
     padding-bottom: 0px;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=signIn.module.css.map */

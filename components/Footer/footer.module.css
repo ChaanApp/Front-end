@@ -12,8 +12,6 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   clear: both;
-  position: absolute !important;
-  bottom: 0 !important;
 }
 
 .iconDot {
