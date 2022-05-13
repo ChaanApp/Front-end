@@ -72,7 +72,7 @@ export default function NavbarUser(props) {
           </Link>
           <div className={styles.contentancorMenuWThree}>
             <Link href="/dashboard-organizer">
-              <a className={styles.ancorNavLog}>hola&#39; {dataUser.name}</a>
+              <a className={styles.ancorNavLog}>Hola&#39; {dataUser.name}</a>
             </Link>
           </div>
           <Image
