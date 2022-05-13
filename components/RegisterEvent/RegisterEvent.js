@@ -54,7 +54,7 @@ export default function RegisterEvent(props) {
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
-    const url = ` http://api.chaan.site/events/${
+    const url = ` https://api.chaan.site/events/${
       existingEvent._id && existingEvent._id.length > 0
         ? existingEvent._id
         : "organizer"

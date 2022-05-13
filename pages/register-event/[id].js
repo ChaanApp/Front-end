@@ -34,7 +34,7 @@ export default function About() {
       router.push("/login-user");
     } else {
       async function getEvent() {
-        const url = ` http://api.chaan.site/events/${router.query.id}`;
+        const url = ` https://api.chaan.site/events/${router.query.id}`;
         const event = await fetch(url, {
           method: "GET",
           headers: {

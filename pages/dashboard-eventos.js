@@ -18,7 +18,7 @@ export default function About() {
       router.push("/login-user");
     } else {
       async function getInfo() {
-        const url = ` http://api.chaan.site/organizer/${id}`;
+        const url = ` https://api.chaan.site/organizer/${id}`;
         const user = await fetch(url, {
           method: "GET",
           headers: {
@@ -31,7 +31,7 @@ export default function About() {
           });
       }
       async function getEvents() {
-        const url = ` http://api.chaan.site/events/organizer`;
+        const url = ` https://api.chaan.site/events/organizer`;
         const events = await fetch(url, {
           method: "GET",
           headers: {

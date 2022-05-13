@@ -23,7 +23,7 @@ export default function LoginUser() {
 
   async function login(event) {
     event.preventDefault();
-    const url = " http://api.chaan.site/organizer/login";
+    const url = " https://api.chaan.site/organizer/login";
     const options = {
       method: "POST",
       body: JSON.stringify(dataLogin),

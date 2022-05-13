@@ -20,7 +20,7 @@ export default function NavbarUser(props) {
       router.push("/login-user");
     } else {
       async function getInfo() {
-        const url = ` http://api.chaan.site/organizer/${id}`;
+        const url = ` https://api.chaan.site/organizer/${id}`;
         const user = await fetch(url, {
           method: "GET",
           headers: {
