@@ -7,7 +7,7 @@ export default function TitleEventD() {
     <div className={styles.ContainerEventDUser}>
       <h1 className={styles.textEventDH1User}>Titulo del evento</h1>
       <p className={styles.textEventDTitleUser}>
-        Los invitamos a "tipo de evento"
+        Los invitamos a tipo de evento
       </p>
       <div className={styles.contentbtnDE}>
         <button className={styles.btnDE}>Edit event</button>

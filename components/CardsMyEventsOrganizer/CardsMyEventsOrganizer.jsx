@@ -20,7 +20,7 @@ export default function CardsMyEventsOrganizer(props) {
               <div>
                 <div>
                   <Link
-                    href={`http://localhost:3000/detail-event-user/${event._id} `}
+                    href={`http://api.chaan.site/detail-event-user/${event._id} `}
                   >
                     <h4>{event.eventType}</h4>
                   </Link>
@@ -46,9 +46,7 @@ export default function CardsMyEventsOrganizer(props) {
               <h3 className={styles.cardMyEventsTitle}> Mis invitaciones</h3>
             </div>
           </Link>
-          <Link
-            href={`http://localhost:3000/register-event/organizer`}
-          >
+          <Link href={`http://api.chaan.site/register-event/organizer`}>
             <div className={styles.cardMyEventsPink}>
               <FiberManualRecordIcon></FiberManualRecordIcon>
               <h3 className={styles.cardMyEventsTitle}>Crea un eventos</h3>

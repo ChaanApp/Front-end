@@ -3,6 +3,7 @@ import styles from "./createInvitees.module.scss";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
+
 const initialStateInvitado = {
   nameInvitee: "",
   emailInvitee: "",
@@ -24,7 +25,7 @@ const initialEvento = {
   invitees: [],
 };
 
-export default function createInvitees(props) {
+export default function CreateInvitees(props) {
   const { idEvento } = props;
   const router = useRouter();
 
