@@ -52,9 +52,7 @@
     height: 100vh;
     margin-bottom: 0;
   }
-  .containerimgTitleDescDE {
-    padding-left: 5%;
-  }
+
   .textDE {
     padding-right: 55px;
   }
@@ -63,6 +61,7 @@
   }
   .mapsDetEvtMD {
     display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 820px) {
@@ -75,6 +74,7 @@
   .mapsDetEvtMD {
     width: 365px;
     height: 180px;
+    padding-right: 24px;
   }
   .containerImgTitleDescDE {
     width: 90%;
@@ -100,6 +100,6 @@
   }
   .mapsDetEvtXL {
     display: flex;
-    padding-left: 20px;
+    
   }
 }

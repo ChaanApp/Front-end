@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 export default function CardDashbordEvents(props) {
-  console.log(props);
+  //console.log(props);
   const events = props.events;
   return (
     <div className={styles.containerMyEventsAndimg}>

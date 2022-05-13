@@ -9,7 +9,10 @@
   margin-left: 24px;
   margin-bottom: 32px;
   color: #3b4559;
-  height: auto !important;
+}
+
+.contInfoMyEvents {
+  height: 100vw;
 }
 
 .contInfoMyEvents {

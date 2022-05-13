@@ -7,6 +7,12 @@
   margin-bottom: 32px;
   width: 300px;
 }
+.contImgLoginInviteeLI {
+  display: none !important;
+}
+.imgLoginInviteeW {
+  display: none !important;
+}
 .btnL:hover {
   background-color: #9f9fed;
   cursor: pointer;
@@ -84,20 +90,21 @@
   font-size: 24px;
   font-weight: bold;
 }
-.contimgLoginInviteeW {
-  display: none;
-}
 
 @media only screen and (min-width: 768px) {
   .contentLoginInvitee {
-    display: flex;
+    display: flex !important;
     align-items: flex-start;
     flex-direction: column;
   }
+  .imgLoginInviteeW {
+    display: flex !important;
+  }
 
-  .contimgLoginInviteeW {
-    display: flex;
+  .contImgLoginInviteeLI {
+    display: flex !important;
     height: 500px;
+    padding-top: 90px;
   }
   .imgLoginInviteeW {
     margin-top: 65px;
@@ -129,6 +136,12 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .containerLoginInvitee {
+    margin-left: 120px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .containerLoginInviteeAndimg {
     margin-left: 70px;
@@ -139,9 +152,8 @@
     object-fit: cover;
   }
   .containerLoginInvitee {
-    margin-left: 90px;
+    margin-left: 125px;
     width: 300px;
-    
   }
   .cardLoginInvitee {
     width: 510px;

@@ -40,7 +40,7 @@ export default function SignUser() {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log("Creando ando", response);
+        //console.log("Creando ando", response);
 
         router.push("/login-user");
       })
@@ -110,8 +110,8 @@ export default function SignUser() {
       </div>
       <div className={styles.contImgLoginW}>
         <Image
-          width={50}
-          height={50}
+          width={300}
+          height={550}
           className={styles.imgLoginW}
           src="/singinuser.jpg"
           alt=""

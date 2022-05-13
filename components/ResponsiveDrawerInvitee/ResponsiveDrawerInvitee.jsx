@@ -24,14 +24,14 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div className={styles.ContainerAMenuM}>
-      <h2 className={styles.TitleMenuDot}> cha’an</h2>
+      <h2 className={styles.TitleMenuDot}> cha&#39;an</h2>
       <div className={styles.ContainerAMenuM}>
         <a className={styles.aOneMenuM} href="">
           Login
         </a>
         <Link href="/">
           <StyledLink className={styles.aMenuM} href="">
-            ¿Qué es cha’an?
+            ¿Qué es cha&#39;an?
           </StyledLink>
         </Link>
         <Link href="/login-invitee">

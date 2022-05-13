@@ -60,7 +60,7 @@ export default function About() {
 
   return (
     <div>
-      <NavbarUser> </NavbarUser>
+      <NavbarUser existingEvent={dataEvent}> </NavbarUser>
       <HeaderCardEvent></HeaderCardEvent>
       <TitleEventDUser existingEvent={dataEvent}></TitleEventDUser>
       <CardDetailEventUser existingEvent={dataEvent}></CardDetailEventUser>

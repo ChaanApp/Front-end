@@ -30,7 +30,7 @@ export default function LoginInvitee() {
           </div>
         </div>
       </div>
-      <div className={styles.contImgLoginInviteeW}>
+      <div className={styles.contImgLoginInviteeLI}>
         <Image
           width={500}
           height={500}

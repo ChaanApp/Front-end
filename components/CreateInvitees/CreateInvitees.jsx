@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./createInvitees.module.scss";
 import { useRouter } from "next/router";
 import Image from "next/image";
-
+import Link from "next/link";
 
 const initialStateInvitado = {
   nameInvitee: "",
@@ -27,6 +27,7 @@ const initialEvento = {
 
 export default function CreateInvitees(props) {
   const { idEvento } = props;
+
   const router = useRouter();
 
   const [dataCreateInvitee, setCreateInvitee] = useState(initialStateInvitado);
@@ -53,7 +54,7 @@ export default function CreateInvitees(props) {
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data.success ? data.data.events : data.data.message);
+           // console.log(data.success ? data.data.events : data.data.message);
             return data.success ? data.data.events : initialState;
           })
           .catch((err) => console.log("Hubo un error en la peticion", err));
@@ -83,7 +84,7 @@ export default function CreateInvitees(props) {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log("Respuesta del nuevo evento PATCH", response);
+        //console.log("Respuesta del nuevo evento PATCH", response);
       })
       .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
@@ -110,6 +111,7 @@ export default function CreateInvitees(props) {
         editEvent.invitees = arrayInvitees;
         setDataEvent(editEvent);
         addInviteeToEnvet(dataEvent);
+        router.push(`/invitees/${props.idEvento}`);
       })
       .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
@@ -156,25 +158,18 @@ export default function CreateInvitees(props) {
               />
             </div>
           </div>
-          <button className={styles.btnL} onClick={createInvitee}>
-            Agregar
-          </button>
+          <div>
+            <button className={styles.btnL} onClick={createInvitee}>
+              Agregar
+            </button>
+          </div>
         </div>
       </div>
-      <div className={styles.contImgLoginW}>
-        <Image
-          width={700}
-          height={500}
-          className={styles.imgLoginW}
-          src="/inviteeAdd.jpg"
-          alt=""
-        />
-      </div>
-      <div className={styles.contImgLoginWMD}>
+      <div className={styles.contImgRIMD}>
         <Image
           width={300}
           height={200}
-          className={styles.imgLoginW}
+          className={styles.imgRI}
           src="/inviteeAdd.jpg"
           alt=""
         />

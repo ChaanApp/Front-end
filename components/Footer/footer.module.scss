@@ -1,4 +1,4 @@
-.FooterScss {
+.Footer {
   background-color: #d5dcde;
   text-align: center;
   align-items: center;
@@ -7,6 +7,8 @@
   height: 80px;
   justify-content: space-around;
   clear: both;
+  position: absolute !important;
+  bottom: 0 !important;
 }
 
 .iconDot {
@@ -33,15 +35,9 @@
   }
   .FooterScss {
     height: 100px;
-    position: relative;
-    bottom: -34px;
   }
 }
 @media only screen and (min-width: 820px) {
-  .FooterScss {
-    position: relative;
-    bottom: -64px;
-  }
 }
 @media only screen and (min-width: 1280px) {
 }

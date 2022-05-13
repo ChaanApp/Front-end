@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import NavbarUser from "../../components/NavbarUser/NavbarUser";
-import RegisterEvent from "../../components/RegisterEvent/RegisterEvent";
-import Footer from "../../components/Footer/Footer";
+import NavbarLogin from "../../../components/NavbarLogin/NavbarLogin";
+import HeaderCardEvent from "../../../components/HeaderCardEvent/HeaderCardEvent";
+import TitleEventDInvitee from "../../../components/TitleEventDInvitee/TitleEventDInvitee";
+import CardDetailEventUser from "../../../components/CardDetailEventUser/CardDetailEventUser";
+import Footer from "../../../components/Footer/Footer";
 import { useRouter } from "next/router";
 
 const initialState = {
@@ -20,12 +22,13 @@ const initialState = {
 };
 
 export default function About() {
-  const [dataEvent, setDataEvent] = useState(initialState); //dataIdEvent
+  const [dataEvent, setDataEvent] = useState(initialState);
   //const [token, setToken] = useState();
   const router = useRouter();
 
   useEffect(() => {
-    if (!router.isReady) return; //
+    if (!router.isReady) return;
+
     const miStorage = window.localStorage;
     let token = JSON.parse(miStorage.getItem("tokenUser"));
     const idUser = JSON.parse(miStorage.getItem("idUser"));
@@ -43,21 +46,24 @@ export default function About() {
         })
           .then((res) => res.json())
           .then((data) => {
-           // console.log(data.success ? data.data.events : data.data.message);
             return data.success ? data.data.events : initialState;
+            //console.log(data.success ? data.data.events : data.data.message);
           })
           .catch((err) => console.log("Hubo un error en la peticion", err));
-        setDataEvent(event); //se setea al estado router quiery id
+        setDataEvent(event);
       }
 
       getEvent();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [router.isReady]); //
+  }, [router.isReady]);
+
   return (
     <div>
-      <NavbarUser> </NavbarUser>
-      <RegisterEvent existingEvent={dataEvent}> </RegisterEvent>
+      <NavbarLogin existingEvent={dataEvent}> </NavbarLogin>
+      <HeaderCardEvent></HeaderCardEvent>
+      <TitleEventDInvitee existingEvent={dataEvent}></TitleEventDInvitee>
+      <CardDetailEventUser existingEvent={dataEvent}></CardDetailEventUser>
       <Footer></Footer>
     </div>
   );

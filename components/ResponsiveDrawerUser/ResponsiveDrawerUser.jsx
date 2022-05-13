@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./responsiveDrawerUser.module.scss";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
@@ -7,7 +7,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
-
+import { useRouter } from "next/router";
 
 const drawerWidth = 281;
 const StyledLink = styled.a`
@@ -15,8 +15,38 @@ const StyledLink = styled.a`
 `;
 
 function ResponsiveDrawer(props) {
-  const { window } = props;
+  const router = useRouter();
+  const [dataUser, setDataUser] = useState([]);
+  const { organizerId } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  useEffect(() => {
+    const miStorage = window.localStorage;
+    const token = JSON.parse(miStorage.getItem("tokenUser"));
+    const id = JSON.parse(miStorage.getItem("idUser"));
+
+    if (!token) {
+      // ruteo login
+      router.push("/login-user");
+    } else {
+      async function getInfo() {
+        const url = ` http://api.chaan.site/organizer/${id}`;
+        const user = await fetch(url, {
+          method: "GET",
+          headers: {
+            Authorization: token,
+          },
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            //console.log(data);
+            return data.data.organizer;
+          });
+        setDataUser(user);
+        //console.log("Desde nav", user);
+      }
+      getInfo();
+    }
+  }, []);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -24,14 +54,14 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div className={styles.ContainerAMenuM}>
-      <h2 className={styles.TitleMenuDot}> cha’an</h2>
+      <h2 className={styles.TitleMenuDot}> cha&#39;an</h2>
       <div className={styles.ContainerAMenuM}>
         <a className={styles.aOneMenuM} href="">
-          Name User
+          Hola&#39; {dataUser.name}
         </a>
         <Link href="/">
           <StyledLink className={styles.aMenuM} href="">
-            ¿Qué es cha’an?
+            ¿Qué es cha&#39;an?
           </StyledLink>
         </Link>
         <Link href="/login-invitee">
@@ -55,7 +85,7 @@ function ResponsiveDrawer(props) {
   );
 
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    organizerId !== undefined ? () => organizerId().document.body : undefined;
 
   return (
     <div className={styles.contenticonMenu}>

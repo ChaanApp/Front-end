@@ -3,7 +3,6 @@ import styles from "./loginUser.module.scss";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-
 const initialState = {
   email: "",
   password: "",
@@ -35,7 +34,7 @@ export default function LoginUser() {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log(response.data);
+       // console.log(response.data);
         if (response.data.token.token) {
           localStorage.setItem(
             "tokenUser",
@@ -51,7 +50,7 @@ export default function LoginUser() {
         }
       })
       .catch((err) => {
-        console.log(err);
+       // console.log(err);
         alert("El email y/o contraseña son incorrectos");
       });
   }
@@ -96,19 +95,10 @@ export default function LoginUser() {
           </button>
         </div>
       </div>
-      <div className={styles.contImgLoginW}>
-        <Image
-          width={500}
-          height={500}
-          className={styles.imgLoginW}
-          src="/picLogW.jpg"
-          alt=""
-        />
-      </div>
       <div className={styles.contImgLoginWMD}>
         <Image
           width={500}
-          height={680}
+          height={500}
           className={styles.imgLoginW}
           src="/picLogW.jpg"
           alt=""
