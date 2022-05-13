@@ -13,21 +13,25 @@
   cursor: pointer;
 }
 
+.contImgLoginW {
+  display: none;
+}
+
 .cardLogin {
   width: 327px;
   height: 390px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 10px 30px;
 }
 
@@ -46,12 +50,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btnL {
@@ -61,7 +65,7 @@
   width: 327px;
   height: 48px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: none;
   font-size: 16px;
   margin-top: 32px;
@@ -69,7 +73,7 @@
 
 .contetaContaseña {
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+          text-decoration-line: underline;
   margin-top: 16px;
   margin-left: 60px;
 }
@@ -105,61 +109,62 @@
   display: none;
 }
 
-@media only screen and (min-width: 820px) {
-  .contentLogin {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 40px;
-  }
-  .contimgLoginW {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 10px;
-    margin-top: 5%;
-  }
-  .imgLoginW {
-    margin-top: 65px;
-    width: 350px;
-    height: 535px;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-  .containerLogin {
-    height: 86vh;
-    margin-top: 5%;
-  }
+@media only screen and (min-width: 768px) {
   .containerLoginAndimg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    height: 108vw;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .containerLogin {
+    height: 75vh;
+    margin-top: 60px;
+  }
+  .contImgLoginW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .imgLoginW {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .containerLoginAndimg {
+    height: 120vw;
+  }
+  .imgLoginW {
+    padding-bottom: 300px;
+  }
+  .contImgLoginW {
+    padding-bottom: 180px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .imgLoginW {
-    width: 600px;
-    height: 500px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    margin-top: 0;
-  }
-  .containerLogin {
-    margin-left: 10px;
-    width: 300px;
-    margin-top: 0;
-  }
   .cardLogin {
     width: 510px;
     height: 460px;
@@ -167,22 +172,21 @@
   .upInputLogin {
     margin-top: 25px;
   }
+  .containerLogin {
+    margin: 0;
+  }
+  .contLogin {
+    margin: 0;
+  }
   .inputLogin {
     width: 450px;
     height: 55px;
   }
-  .contetaContaseña {
-    margin-left: 150px;
-  }
-  .btnL {
-    margin-left: 90px;
-  }
-  .containerLogin {
-    height: 75vh;
-  }
   .containerLoginAndimg {
-    height: 800px;
-    margin-bottom: 30px;
+    height: 120vh;
+  }
+  .contImgLoginW {
+    padding-bottom: 0px;
   }
 }
 /*# sourceMappingURL=signIn.module.css.map */

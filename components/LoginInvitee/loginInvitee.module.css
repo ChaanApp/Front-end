@@ -10,6 +10,14 @@
   width: 300px;
 }
 
+.contImgLoginInviteeLI {
+  display: none !important;
+}
+
+.imgLoginInviteeW {
+  display: none !important;
+}
+
 .btnL:hover {
   background-color: #9f9fed;
   cursor: pointer;
@@ -24,17 +32,17 @@
   width: 327px;
   height: 180px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 40px 30px;
 }
 
@@ -53,12 +61,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btnLI {
@@ -68,7 +76,7 @@
   width: 327px;
   height: 48px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: none;
   font-size: 16px;
   margin-top: 32px;
@@ -85,15 +93,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .aContaseñaInvitee {
@@ -124,35 +132,37 @@
   font-weight: bold;
 }
 
-.contimgLoginInviteeW {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
   .contentLoginInvitee {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .contimgLoginInviteeW {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .imgLoginInviteeW {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .contImgLoginInviteeLI {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     height: 500px;
+    padding-top: 90px;
   }
   .imgLoginInviteeW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .containerLoginInvitee {
     height: 86vh;
@@ -163,12 +173,12 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     margin: 25px;
     margin-top: 5%;
     padding: 0;
@@ -185,6 +195,12 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .containerLoginInvitee {
+    margin-left: 120px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .containerLoginInviteeAndimg {
     margin-left: 70px;
@@ -193,10 +209,10 @@
     width: 300px;
     height: 500px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .containerLoginInvitee {
-    margin-left: 90px;
+    margin-left: 125px;
     width: 300px;
   }
   .cardLoginInvitee {

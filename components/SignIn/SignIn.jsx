@@ -40,7 +40,7 @@ export default function SignUser() {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log("Creando ando", response);
+        //console.log("Creando ando", response);
 
         router.push("/login-user");
       })

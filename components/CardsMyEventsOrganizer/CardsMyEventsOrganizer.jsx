@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 export default function CardsMyEventsOrganizer(props) {
-  console.log(props);
+  //console.log(props);
   const events = props.events;
 
   return (
@@ -40,12 +40,10 @@ export default function CardsMyEventsOrganizer(props) {
               <h3 className={styles.cardMyEventsTitle}> Mis eventos</h3>
             </div>
           </Link>
-          <Link href="/invitees">
             <div className={styles.cardMyEventsMorado}>
               <FiberManualRecordIcon></FiberManualRecordIcon>
               <h3 className={styles.cardMyEventsTitle}> Mis invitaciones</h3>
             </div>
-          </Link>
           <Link href={`http://api.chaan.site/register-event/organizer`}>
             <div className={styles.cardMyEventsPink}>
               <FiberManualRecordIcon></FiberManualRecordIcon>

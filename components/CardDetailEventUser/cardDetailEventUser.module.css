@@ -62,9 +62,6 @@
     height: 100vh;
     margin-bottom: 0;
   }
-  .containerimgTitleDescDE {
-    padding-left: 5%;
-  }
   .textDE {
     padding-right: 55px;
   }
@@ -75,6 +72,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -92,6 +92,7 @@
   .mapsDetEvtMD {
     width: 365px;
     height: 180px;
+    padding-right: 24px;
   }
   .containerImgTitleDescDE {
     width: 90%;
@@ -119,7 +120,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=cardDetailEventUser.module.css.map */

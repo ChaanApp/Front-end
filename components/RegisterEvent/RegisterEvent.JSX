@@ -29,7 +29,7 @@ export default function RegisterEvent(props) {
 
   useEffect(() => {
     //if (!existingEvent._id) return;
-    console.log(props);
+    //console.log(props);
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
@@ -85,7 +85,7 @@ export default function RegisterEvent(props) {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log(response);
+        //console.log(response);
       })
       .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }

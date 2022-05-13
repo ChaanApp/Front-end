@@ -34,7 +34,7 @@ export default function LoginUser() {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log(response.data);
+       // console.log(response.data);
         if (response.data.token.token) {
           localStorage.setItem(
             "tokenUser",
@@ -50,7 +50,7 @@ export default function LoginUser() {
         }
       })
       .catch((err) => {
-        console.log(err);
+       // console.log(err);
         alert("El email y/o contraseña son incorrectos");
       });
   }

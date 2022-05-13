@@ -3,7 +3,7 @@ import styles from "./titleEventDUser.module.scss";
 import Link from "next/link";
 
 export default function TitleEventD(props) {
-  console.log(props);
+ // console.log(props);
   const event = props.existingEvent;
 
   return (
