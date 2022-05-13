@@ -13,7 +13,7 @@
 .containerLogo {
   width: 33%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 15px;
 }
 
@@ -44,12 +44,12 @@
     cursor: pointer;
   }
   .ancorStylesOne:hover {
-    color: #7A8082;
+    color: #7a8082;
     cursor: pointer;
   }
 
   .ancorStylesTwo:hover {
-    color: #7A8082;
+    color: #7a8082;
     cursor: pointer;
   }
   .NavScssM {
