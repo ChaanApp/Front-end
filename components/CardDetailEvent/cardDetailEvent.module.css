@@ -23,6 +23,10 @@
   text-align: center;
 }
 
+.titleDECV {
+  margin-left: 35px;
+}
+
 .textDE {
   font-size: 16px;
   color: #3b4559;
@@ -35,10 +39,14 @@
   margin-top: 130px;
 }
 
-.mapsDetEvt {
+.mapsDetEvtXS {
   width: 88%;
   margin-bottom: 24px;
   margin-left: 20px;
+}
+
+.mapsDetEvtXL {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -56,6 +64,15 @@
 @media only screen and (min-width: 1280px) {
   .containerDE {
     margin-top: 220px;
+  }
+  .mapsDetEvtXS {
+    display: none;
+  }
+  .mapsDetEvtXL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=cardDetailEvent.module.css.map */

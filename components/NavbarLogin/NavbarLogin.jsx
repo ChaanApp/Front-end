@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./navbarLogin.module.scss";
 import ResponsiveDrawer from "../ResponsiveDrawer/ResponsiveDrawer";
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function NavbarLogin() {
@@ -13,7 +14,13 @@ export default function NavbarLogin() {
         </div>
         <p className={styles.textNav}>cha'an</p>
         <div className={styles.containerLogo}>
-          <img className={styles.iconLogo} src="/chaanApp.png" alt="" />
+          <Image
+            width={50}
+            height={50}
+            className={styles.iconLogo}
+            src="/chaanApp.png"
+            alt=""
+          />
         </div>
       </div>
       <div className={styles.NavScssW}>
@@ -40,7 +47,13 @@ export default function NavbarLogin() {
             </Link>
           </div>
 
-          <img className={styles.iconLogo} src="/chaanApp.png" alt="" />
+          <Image
+            width={50}
+            height={50}
+            className={styles.iconLogo}
+            src="/chaanApp.png"
+            alt=""
+          />
         </div>
       </div>
     </div>

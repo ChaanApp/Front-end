@@ -3,6 +3,10 @@
   height: 72vh;
 }
 
+.contImgLoginWMD {
+  display: none;
+}
+
 .contLogin {
   margin-top: 25%;
   margin-left: 38px;
@@ -22,17 +26,17 @@
   width: 327px;
   height: 260px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 10px 30px;
 }
 
@@ -51,12 +55,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btnL {
@@ -66,7 +70,7 @@
   width: 327px;
   height: 48px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: none;
   font-size: 16px;
   margin-top: 32px;
@@ -74,7 +78,7 @@
 
 .contetaContaseña {
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+          text-decoration-line: underline;
   margin-top: 16px;
   margin-left: 60px;
 }
@@ -111,32 +115,43 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .contImgLoginWMD {
+    margin-top: 12%;
+    width: 300px;
+    height: 500px;
+    margin-right: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .contentLogin {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 40px;
   }
   .contimgLoginW {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 10px;
+    height: 500px;
+    margin-top: 5%;
     margin-right: 30px;
+    display: none;
   }
   .imgLoginW {
     margin-top: 65px;
     width: 350px;
     height: 535px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .containerLogin {
     height: 80vh;
@@ -146,8 +161,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -158,15 +173,21 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .contimgLoginW {
+  .contImgLoginWMD {
+    display: none;
+  }
+  .contImgLoginW {
     margin-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .imgLoginW {
     width: 600px;
     height: 500px;
     margin-left: 40px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .containerLogin {
     margin-left: 10px;
@@ -188,6 +209,9 @@
   }
   .btnL {
     margin-left: 90px;
+  }
+  .containerLogin {
+    width: 38vh;
   }
 }
 /*# sourceMappingURL=loginUser.module.css.map */

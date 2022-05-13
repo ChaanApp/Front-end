@@ -10,13 +10,16 @@
   margin-left: 10px;
 }
 .conticonDetEvtTitle {
-    margin-top: 24px;
+  margin-top: 24px;
   display: flex;
   font-size: 16px;
   margin-left: 28px;
   color: #3b4559;
   font-weight: bold;
   text-align: center;
+}
+.titleDECV {
+  margin-left: 35px;
 }
 
 .textDE {
@@ -26,23 +29,34 @@
   padding-right: 24px;
   padding-bottom: 16px;
 }
-.containerDE{
-    margin-top: 130px;
+.containerDE {
+  margin-top: 130px;
 }
-.mapsDetEvt{
-    width: 88%;
-    margin-bottom: 24px;
-    margin-left: 20px;
+.mapsDetEvtXS {
+  width: 88%;
+  margin-bottom: 24px;
+  margin-left: 20px;
 }
+.mapsDetEvtXL {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
- .containerDE{
-     display: flex;
-     flex-direction: row;
- }
+  .containerDE {
+    display: flex;
+    flex-direction: row;
   }
-  
-  @media only screen and (min-width: 1280px) {
-    .containerDE{
-       margin-top: 220px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .containerDE {
+    margin-top: 220px;
+  }
+  .mapsDetEvtXS {
+    display: none;
+  }
+  .mapsDetEvtXL {
+    display: flex;
+    padding-left: 20px;
   }
 }

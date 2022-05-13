@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./signIn.module.scss";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 
 const initialState = {
@@ -111,8 +112,14 @@ export default function SignUser() {
           </button>
         </div>
       </div>
-      <div className={styles.contimgLoginW}>
-        <img className={styles.imgLoginW} src="/singinuser.jpg" alt="" />
+      <div className={styles.contImgLoginW}>
+        <Image
+          width={50}
+          height={50}
+          className={styles.imgLoginW}
+          src="/singinuser.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

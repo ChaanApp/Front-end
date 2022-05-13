@@ -16,9 +16,15 @@
 .imgAnf:hover {
   transform: scale(1.8);
 }
-.overFow {
+.overFowXS {
   overflow: hidden;
   border-radius: 16px;
+}
+.overFowMD {
+  display: none;
+}
+.overFowXL {
+  display: none;
 }
 
 .imgInv {
@@ -48,6 +54,12 @@
     height: 150px;
     border-radius: 16px;
   }
+  .overFowXS {
+    display: none;
+  }
+  .overFowMD {
+    display: flex;
+  }
 
   .imgInv {
     width: 262px;
@@ -73,7 +85,12 @@
     height: 200px;
     border-radius: 16px;
   }
-
+  .overFowXL {
+    display: flex;
+  }
+  .overFowMD {
+    display: none;
+  }
   .imgInv {
     width: 362px;
     height: 200px;

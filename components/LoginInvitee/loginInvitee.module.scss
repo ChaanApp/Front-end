@@ -5,6 +5,7 @@
   margin-top: 25%;
   margin-left: 38px;
   margin-bottom: 32px;
+  width: 300px;
 }
 .btnL:hover {
   background-color: #9f9fed;
@@ -96,7 +97,7 @@
 
   .contimgLoginInviteeW {
     display: flex;
-    height: 10px;
+    height: 500px;
   }
   .imgLoginInviteeW {
     margin-top: 65px;
@@ -113,6 +114,7 @@
     justify-content: start;
     flex-direction: row-reverse;
     margin: 25px;
+    margin-top: 5%;
     padding: 0;
   }
   .cardLoginInvitee {
@@ -132,13 +134,14 @@
     margin-left: 70px;
   }
   .imgLoginInviteeW {
-    width: 600px;
+    width: 300px;
     height: 500px;
     object-fit: cover;
   }
   .containerLoginInvitee {
-    margin-left: 40px;
+    margin-left: 90px;
     width: 300px;
+    
   }
   .cardLoginInvitee {
     width: 510px;

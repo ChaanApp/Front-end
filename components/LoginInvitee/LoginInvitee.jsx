@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./loginInvitee.module.scss";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 
 export default function LoginInvitee() {
@@ -29,8 +30,14 @@ export default function LoginInvitee() {
           </div>
         </div>
       </div>
-      <div className={styles.contimgLoginInviteeW}>
-        <img className={styles.imgLoginInviteeW} src="/invitte.jpg" alt="" />
+      <div className={styles.contImgLoginInviteeW}>
+        <Image
+          width={500}
+          height={500}
+          className={styles.imgLoginInviteeW}
+          src="/invitte.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

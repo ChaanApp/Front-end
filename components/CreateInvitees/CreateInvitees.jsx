@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./createInvitees.module.scss";
 import { useRouter } from "next/router";
-
+import Image from "next/image";
 
 const initialStateInvitado = {
   nameInvitee: "",
@@ -43,7 +43,7 @@ export default function createInvitees(props) {
     } else if (idEvento.length > 0) {
       setToken(tokenS);
       async function getEvent() {
-        const url = `http://localhost:8080/events/${idEvento}`;
+        const url = ` http://api.chaan.site/events/${idEvento}`;
         const event = await fetch(url, {
           method: "GET",
           headers: {
@@ -70,7 +70,7 @@ export default function createInvitees(props) {
     });
   }
   async function addInviteeToEnvet(newEvent) {
-    const url = `http://localhost:8080/events/${idEvento}`;
+    const url = ` http://api.chaan.site/events/${idEvento}`;
     const options = {
       method: "PUT",
       body: JSON.stringify(newEvent),
@@ -89,7 +89,7 @@ export default function createInvitees(props) {
 
   async function createInvitee(event) {
     event.preventDefault();
-    const url = `http://localhost:8080/events/${idEvento}/invitees `;
+    const url = ` http://api.chaan.site/events/${idEvento}/invitees `;
     const options = {
       method: "POST",
       body: JSON.stringify(dataCreateInvitee),
@@ -160,8 +160,23 @@ export default function createInvitees(props) {
           </button>
         </div>
       </div>
-      <div className={styles.contimgLoginW}>
-        <img className={styles.imgLoginW} src="/inviteeAdd.jpg" alt="" />
+      <div className={styles.contImgLoginW}>
+        <Image
+          width={700}
+          height={500}
+          className={styles.imgLoginW}
+          src="/inviteeAdd.jpg"
+          alt=""
+        />
+      </div>
+      <div className={styles.contImgLoginWMD}>
+        <Image
+          width={300}
+          height={200}
+          className={styles.imgLoginW}
+          src="/inviteeAdd.jpg"
+          alt=""
+        />
       </div>
     </div>
   );
