@@ -1,4 +1,4 @@
-.FooterScss {
+.Footer {
   background-color: #d5dcde;
   text-align: center;
   -webkit-box-align: center;
@@ -44,15 +44,6 @@
   }
   .FooterScss {
     height: 100px;
-    position: relative;
-    bottom: -34px;
-  }
-}
-
-@media only screen and (min-width: 820px) {
-  .FooterScss {
-    position: relative;
-    bottom: -64px;
   }
 }
 /*# sourceMappingURL=footer.module.css.map */

@@ -29,7 +29,7 @@ export default function RegisterEvent(props) {
 
   useEffect(() => {
     //if (!existingEvent._id) return;
-    console.log(props);
+    //console.log(props);
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
@@ -54,7 +54,11 @@ export default function RegisterEvent(props) {
     const miStorage = window.localStorage;
     const token = JSON.parse(miStorage.getItem("tokenUser"));
     const id = JSON.parse(miStorage.getItem("idUser"));
+<<<<<<< HEAD:components/RegisterEvent/RegisterEvent.JSX
     const url = `https://api.chaan.site/events/${
+=======
+    const url = ` https://api.chaan.site/events/${
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e:components/RegisterEvent/RegisterEvent.js
       existingEvent._id && existingEvent._id.length > 0
         ? existingEvent._id
         : "organizer"
@@ -85,7 +89,8 @@ export default function RegisterEvent(props) {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log(response);
+        router.push(`/dashboard-organizer`);
+        //console.log(response);
       })
       .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }

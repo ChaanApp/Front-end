@@ -8,7 +8,7 @@ import Image from "next/image";
 
 
 export default function CardDetailEvent(props) {
-  console.log(props);
+  //console.log(props);
   const event = props.existingEvent;
 
   return (

@@ -20,7 +20,11 @@ export default function About() {
       router.push("/login-user");
     } else {
       async function getInfo() {
+<<<<<<< HEAD
         const url = `https://api.chaan.site/organizer/${id}`;
+=======
+        const url = ` https://api.chaan.site/organizer/${id}`;
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
         const user = await fetch(url, {
           method: "GET",
           headers: {
@@ -29,11 +33,15 @@ export default function About() {
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data);
+           // console.log(data);
           });
       }
       async function getEvents() {
+<<<<<<< HEAD
         const url = `https://api.chaan.site/events/organizer`;
+=======
+        const url = ` https://api.chaan.site/events/organizer`;
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
         const events = await fetch(url, {
           method: "GET",
           headers: {

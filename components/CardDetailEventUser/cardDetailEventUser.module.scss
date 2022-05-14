@@ -52,9 +52,7 @@
     height: 100vh;
     margin-bottom: 0;
   }
-  .containerimgTitleDescDE {
-    padding-left: 5%;
-  }
+
   .textDE {
     padding-right: 55px;
   }
@@ -63,6 +61,7 @@
   }
   .mapsDetEvtMD {
     display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 820px) {
@@ -73,14 +72,21 @@
     padding-left: 5%;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .containerimgTitleDescDE {
 =======
+=======
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
   .mapsDetEvtMD {
     width: 365px;
     height: 180px;
+    padding-right: 24px;
   }
   .containerImgTitleDescDE {
+<<<<<<< HEAD
 >>>>>>> buildNext
+=======
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
     width: 90%;
     padding: 0;
     margin: 0;
@@ -104,6 +110,6 @@
   }
   .mapsDetEvtXL {
     display: flex;
-    padding-left: 20px;
+    
   }
 }

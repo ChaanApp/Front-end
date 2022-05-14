@@ -71,10 +71,14 @@
   font-size: 24px;
   font-weight: bold;
 }
-.contimgLoginW {
+.imgRI {
   display: none;
 }
+<<<<<<< HEAD
 .contImgLoginWMD {
+=======
+.contImgRIMD {
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
   display: none;
 }
 
@@ -94,7 +98,7 @@
     flex-direction: column;
     margin-left: 40px;
   }
-  .contimgLoginW {
+  .contImgRIMD {
     display: flex;
     height: 470px;
     width: 300px;
@@ -102,10 +106,8 @@
     margin-right: 5%;
     object-fit: cover;
   }
-  .contImgLoginWMD {
-    display: none;
-  }
-  .imgLoginW {
+
+  .imgRI {
     margin-top: 65px;
     width: 350px;
     height: 535px;
@@ -123,7 +125,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .imgLoginW {
+  .imgRI {
     width: 600px;
     height: 500px;
     object-fit: cover;
@@ -153,14 +155,15 @@
     margin-left: 90px;
   }
   .containerLogin {
-    height: 75vh;
+    height: 5vh;
+    padding-left: 40px;
   }
   .containerLoginAndimg {
     height: 800px;
     margin-bottom: 30px;
   }
-  .contImgLoginW {
-    width: 500px;
+  .contImgRIMD {
+    width: 380px;
     height: 600px;
     margin-top: 5%;
     margin-right: 5%;

@@ -3,7 +3,6 @@ import styles from "./loginUser.module.scss";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-
 const initialState = {
   email: "",
   password: "",
@@ -24,7 +23,11 @@ export default function LoginUser() {
 
   async function login(event) {
     event.preventDefault();
+<<<<<<< HEAD
     const url = "https://api.chaan.site/organizer/login";
+=======
+    const url = " https://api.chaan.site/organizer/login";
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
     const options = {
       method: "POST",
       body: JSON.stringify(dataLogin),
@@ -35,7 +38,7 @@ export default function LoginUser() {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log(response.data);
+       // console.log(response.data);
         if (response.data.token.token) {
           localStorage.setItem(
             "tokenUser",
@@ -51,7 +54,7 @@ export default function LoginUser() {
         }
       })
       .catch((err) => {
-        console.log(err);
+       // console.log(err);
         alert("El email y/o contraseña son incorrectos");
       });
   }
@@ -96,7 +99,11 @@ export default function LoginUser() {
           </button>
         </div>
       </div>
+<<<<<<< HEAD
       <div className={styles.contImgLoginW}>
+=======
+      <div className={styles.contImgLoginWMD}>
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
         <Image
           width={500}
           height={500}
@@ -105,6 +112,7 @@ export default function LoginUser() {
           alt=""
         />
       </div>
+<<<<<<< HEAD
       <div className={styles.contImgLoginWMD}>
         <Image
           width={500}
@@ -114,6 +122,8 @@ export default function LoginUser() {
           alt=""
         />
       </div>
+=======
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
     </div>
   );
 }

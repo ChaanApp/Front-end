@@ -3,7 +3,6 @@ import styles from "./signIn.module.scss";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-
 const initialState = {
   name: "",
   lastName: "",
@@ -41,14 +40,11 @@ export default function SignUser() {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        /* console.log(response.data.organizer._id);
-        localStorage.setItem(
-          "idUser",
-          JSON.stringify(response.data.organizer._id)
-        );*/
-        router.push("/login-user"); // quitar poner alert se creo invite
+        //console.log("Creando ando", response);
+
+        router.push("/login-user");
       })
-      .catch((err) => console.log("Hubo un error en la peticion", err)); //
+      .catch((err) => console.log("Hubo un error en la peticion", err));
   }
   //agregar en cada imput el name y valiu  name="name"
   //onChange={saveState}
@@ -114,8 +110,8 @@ export default function SignUser() {
       </div>
       <div className={styles.contImgLoginW}>
         <Image
-          width={50}
-          height={50}
+          width={500}
+          height={850}
           className={styles.imgLoginW}
           src="/singinuser.jpg"
           alt=""

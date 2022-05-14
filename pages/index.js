@@ -1,4 +1,4 @@
-import NavbarLogin from "../components/NavbarLOgin/NavbarLogin";
+import NavbarLogin from "../components/NavbarLogin/NavbarLogin";
 import SectionVideo from "../components/SectionVideo/SectionVideo";
 import TitleHBnt from "../components/TitleHBnt/TitleHBnt";
 import CardAnfInv from "../components/CardAnfInv/CardAnfInv";

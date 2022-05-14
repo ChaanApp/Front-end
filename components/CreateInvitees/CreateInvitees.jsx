@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./createInvitees.module.scss";
 import { useRouter } from "next/router";
 import Image from "next/image";
-
+import Link from "next/link";
 
 const initialStateInvitado = {
   nameInvitee: "",
@@ -25,8 +25,9 @@ const initialEvento = {
   invitees: [],
 };
 
-export default function createInvitees(props) {
+export default function CreateInvitees(props) {
   const { idEvento } = props;
+
   const router = useRouter();
 
   const [dataCreateInvitee, setCreateInvitee] = useState(initialStateInvitado);
@@ -44,7 +45,11 @@ export default function createInvitees(props) {
     } else if (idEvento.length > 0) {
       setToken(tokenS);
       async function getEvent() {
+<<<<<<< HEAD
         const url = `https://api.chaan.site/events/${idEvento}`;
+=======
+        const url = ` https://api.chaan.site/events/${idEvento}`;
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
         const event = await fetch(url, {
           method: "GET",
           headers: {
@@ -53,7 +58,7 @@ export default function createInvitees(props) {
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data.success ? data.data.events : data.data.message);
+           // console.log(data.success ? data.data.events : data.data.message);
             return data.success ? data.data.events : initialState;
           })
           .catch((err) => console.log("Hubo un error en la peticion", err));
@@ -71,7 +76,11 @@ export default function createInvitees(props) {
     });
   }
   async function addInviteeToEnvet(newEvent) {
+<<<<<<< HEAD
     const url = `https://api.chaan.site/events/${idEvento}`;
+=======
+    const url = ` https://api.chaan.site/events/${idEvento}`;
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
     const options = {
       method: "PUT",
       body: JSON.stringify(newEvent),
@@ -83,14 +92,18 @@ export default function createInvitees(props) {
     await fetch(url, options)
       .then((res) => res.json())
       .then((response) => {
-        console.log("Respuesta del nuevo evento PATCH", response);
+        //console.log("Respuesta del nuevo evento PATCH", response);
       })
       .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
 
   async function createInvitee(event) {
     event.preventDefault();
+<<<<<<< HEAD
     const url = `https://api.chaan.site/events/${idEvento}/invitees `;
+=======
+    const url = ` https://api.chaan.site/events/${idEvento}/invitees `;
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
     const options = {
       method: "POST",
       body: JSON.stringify(dataCreateInvitee),
@@ -110,6 +123,7 @@ export default function createInvitees(props) {
         editEvent.invitees = arrayInvitees;
         setDataEvent(editEvent);
         addInviteeToEnvet(dataEvent);
+        router.push(`/invitees/${props.idEvento}`);
       })
       .catch((err) => console.log("Hubo un error en la peticion", err)); //
   }
@@ -156,11 +170,14 @@ export default function createInvitees(props) {
               />
             </div>
           </div>
-          <button className={styles.btnL} onClick={createInvitee}>
-            Agregar
-          </button>
+          <div>
+            <button className={styles.btnL} onClick={createInvitee}>
+              Agregar
+            </button>
+          </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className={styles.contImgLoginW}>
         <Image
           width={700}
@@ -171,10 +188,13 @@ export default function createInvitees(props) {
         />
       </div>
       <div className={styles.contImgLoginWMD}>
+=======
+      <div className={styles.contImgRIMD}>
+>>>>>>> 06605f1b8c8f0635cef16770356b3bd39f51386e
         <Image
           width={300}
           height={200}
-          className={styles.imgLoginW}
+          className={styles.imgRI}
           src="/inviteeAdd.jpg"
           alt=""
         />

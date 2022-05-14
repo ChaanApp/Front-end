@@ -12,7 +12,7 @@ export default function NavbarInvitee() {
         <div className={styles.containerIconMenu}>
           <ResponsiveDrawerInvitee></ResponsiveDrawerInvitee>
         </div>
-        <p className={styles.textNav}>cha'an</p>
+        <p className={styles.textNav}>cha &#39;an</p>
         <div className={styles.containerLogo}>
           <Image
             width={50}
@@ -25,11 +25,11 @@ export default function NavbarInvitee() {
       </div>
       <div className={styles.NavScssW}>
         <div className={styles.NavScssWOne}>
-          <p className={styles.textNav}>cha'an</p>
+          <p className={styles.textNav}>cha&#39;an</p>
         </div>
         <div className={styles.contentancorMenuWTwo}>
           <Link href="/">
-            <a className={styles.ancorStylesOne}> ¿Qué es cha'an?</a>
+            <a className={styles.ancorStylesOne}> ¿Qué es cha&#39;an?</a>
           </Link>
           <Link href="/login-invitee">
             <a className={styles.ancorStylesTwo}>Soy invitado</a>

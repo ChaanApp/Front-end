@@ -8,7 +8,6 @@ import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 
-
 const drawerWidth = 281;
 const StyledLink = styled.a`
   color: white;
@@ -24,7 +23,7 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div className={styles.ContainerAMenuM}>
-      <h2 className={styles.TitleMenuDot}> cha'an</h2>
+      <h2 className={styles.TitleMenuDot}> cha&#39;an</h2>
       <div className={styles.ContainerAMenuM}>
         <Link href="/login-user">
           <StyledLink className={styles.aOneMenuM} href="">
@@ -38,7 +37,7 @@ function ResponsiveDrawer(props) {
         </Link>
         <Link href="/">
           <StyledLink className={styles.aMenuM} href="">
-            ¿Qué es cha'an?
+            ¿Qué es cha&#39;an?
           </StyledLink>
         </Link>
         <Link href="/login-invitee">
@@ -46,7 +45,7 @@ function ResponsiveDrawer(props) {
             Soy invitado
           </StyledLink>
         </Link>
-        <Link href="/register-event">
+        <Link href="/login-user">
           <StyledLink className={styles.aTwoMenuM} href="">
             Crear un evento
           </StyledLink>
@@ -95,7 +94,7 @@ function ResponsiveDrawer(props) {
           }}
           sx={{
             display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
+            " .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
             },

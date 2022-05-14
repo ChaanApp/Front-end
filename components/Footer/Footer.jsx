@@ -4,7 +4,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 export default function Footer() {
   return (
-    <div className={styles.FooterScss}>
+    <div className={styles.Footer}>
       <p className={styles.textFooter}>Términos y condiciones</p>
       <div className={styles.iconDot}>
         <FiberManualRecordIcon />
